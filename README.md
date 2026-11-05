@@ -2,7 +2,7 @@
 
 一个本地运行、不联网的 Android 小工具，目前主要功能是**自动跳过 App 开屏广告**。
 
-当前正式版：**1.2.8**（versionCode 11）。
+当前正式版：**1.2.8**（versionCode 11）。安装包与发布说明见 [Releases](https://github.com/gzy-geizen/xuxutoolbox/releases)。
 
 - 不申请网络权限，不上传任何数据
 - 默认「试运行」：只记录候选、不真正点击；确认无误后再关闭
