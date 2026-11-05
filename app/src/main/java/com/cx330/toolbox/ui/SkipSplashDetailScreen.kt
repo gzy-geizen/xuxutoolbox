@@ -215,7 +215,7 @@ fun SkipSplashDetailScreen(
                 }
                 SwitchRow(
                     title = "严格模式（默认）",
-                    subtitle = "只用 App 专属规则；单个 App 可在应用列表覆盖",
+                    subtitle = "开启后只用 App 专属规则（含你自建的），不再用通用「跳过」兜底；单个 App 可在应用列表覆盖",
                     checked = strictMode,
                     onCheckedChange = { strictMode = it; config.strictMode = it },
                 )

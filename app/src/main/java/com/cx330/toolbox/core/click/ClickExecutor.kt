@@ -75,7 +75,12 @@ class ClickExecutor {
             return tapPoint(service, point.first, point.second)
         }
 
-        val node = findNode(root, candidate) ?: return "node_not_found"
+        val node = findNode(root, candidate) ?: return if (candidate.action.fallback == "none") {
+            "node_not_found"
+        } else {
+            // 用户规则允许兜底：按决策时的节点中心点一下，避免“只按描述匹配”永远点不到。
+            tapByGesture(service, candidate)
+        }
         val nodePackage = node.packageName?.toString()
         if (nodePackage != null && nodePackage != expectedPackage) {
             return "package_changed"

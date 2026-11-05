@@ -52,8 +52,8 @@ android {
         applicationId = "com.cx330.toolbox"
         minSdk = 31
         targetSdk = 36
-        versionCode = 8
-        versionName = "1.2.5"
+        versionCode = 11
+        versionName = "1.2.8"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

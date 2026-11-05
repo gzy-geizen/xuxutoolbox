@@ -9,6 +9,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -76,7 +77,7 @@ import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 
-private enum class StudioMode { LIST, CAPTURE, NODES, EDIT }
+private enum class StudioMode { LIST, CAPTURE, NODES, EDIT, HELP }
 
 @Composable
 fun RuleStudioScreen(onBack: () -> Unit) {
@@ -251,11 +252,18 @@ fun RuleStudioScreen(onBack: () -> Unit) {
                     StudioMode.CAPTURE -> "点截图上的「跳过」"
                     StudioMode.NODES -> "节点列表（高级）"
                     StudioMode.EDIT -> "确认规则"
+                    StudioMode.HELP -> "使用说明"
                 },
                 style = MaterialTheme.typography.headlineSmall,
                 color = JournalColors.ink,
                 modifier = Modifier.padding(start = 4.dp),
             )
+            Spacer(Modifier.weight(1f))
+            if (mode == StudioMode.LIST) {
+                TextButton(onClick = { mode = StudioMode.HELP }) {
+                    Text("使用说明", color = JournalColors.caramel)
+                }
+            }
         }
 
         when (mode) {
@@ -303,6 +311,13 @@ fun RuleStudioScreen(onBack: () -> Unit) {
                 onPick = { node ->
                     selectedNode = node
                     val pkg = capture?.packageName ?: ""
+                    val screenW = (capture?.screenWidth ?: 1).coerceAtLeast(1).toFloat()
+                    val screenH = (capture?.screenHeight ?: 1).coerceAtLeast(1).toFloat()
+                    val relocatable = !node.text.isNullOrBlank() || !node.viewId.isNullOrBlank()
+                    val nodeClick = node.clickable && relocatable
+                    val b = CapturePointRule.boundsOf(node)
+                    val centerX = if (b != null) (b[0] + b[2]) / 2f else screenW / 2f
+                    val centerY = if (b != null) (b[1] + b[3]) / 2f else screenH / 2f
                     draft = UserRuleDraft(
                         id = "user.${pkg.substringAfterLast('.')}.${System.currentTimeMillis()}",
                         packageName = pkg,
@@ -314,10 +329,10 @@ fun RuleStudioScreen(onBack: () -> Unit) {
                         },
                         matchValue = node.text ?: node.contentDescription ?: node.viewId.orEmpty(),
                         region = null,
-                        actionType = "click",
-                        tapXRatio = 0.854f,
-                        tapYRatio = 0.073f,
-                        anchor = "node",
+                        actionType = if (nodeClick) "click" else "tap",
+                        tapXRatio = centerX / screenW,
+                        tapYRatio = centerY / screenH,
+                        anchor = "screen",
                         priority = 200,
                     )
                     mode = StudioMode.EDIT
@@ -339,7 +354,8 @@ fun RuleStudioScreen(onBack: () -> Unit) {
                             val reloaded = withContext(Dispatchers.IO) {
                                 com.cx330.toolbox.service.MyAccessibilityService.requestReload()
                             }
-                            message = "规则已保存：${it.id}" + if (reloaded) "（已热加载）" else "（重启无障碍后生效）"
+                            message = "规则已保存：${it.id}" + if (reloaded) "（已热加载）" else "（重启无障碍后生效）" +
+                                "；如未生效，请到诊断查看最近事件里的 rule id 和结果。"
                             mode = StudioMode.LIST
                             draft = null
                         }
@@ -348,6 +364,8 @@ fun RuleStudioScreen(onBack: () -> Unit) {
                     }
                 },
             )
+
+            StudioMode.HELP -> RuleStudioHelpScreen(modifier = Modifier.weight(1f))
         }
     }
 
@@ -492,10 +510,12 @@ private fun draftFromPick(doc: CaptureDocument, pick: CapturePointRule.Pick): Us
         UserMatchKind.VIEW_ID -> viewId
         else -> ""
     }
-    val clickable = node.clickable && kind != UserMatchKind.REGION
+    // 只有 text 或 viewId 才能在执行时重新定位到节点；只有 desc 的图片广告定位不到。
+    val relocatable = text.isNotEmpty() || viewId.isNotEmpty()
+    val clickable = node.clickable && relocatable && kind != UserMatchKind.REGION
     // REGION 是按“区域/整块广告”匹配，点击点必须也用屏幕比例；
     // 不能“按区域匹配、按节点内比例点击”，否则执行时会套到另一个节点上。
-    val useNodeAnchor = kind != UserMatchKind.REGION
+    val useNodeAnchor = clickable
     return UserRuleDraft(
         id = id,
         packageName = pkg,
@@ -706,18 +726,20 @@ private fun StudioList(
 
         Text("我的规则（${rules.size} 条）", style = MaterialTheme.typography.titleSmall, color = JournalColors.inkSoft)
         Text(
-            "工坊规则属于 App 专属规则，严格模式下会直接生效，不需要再导入一次。",
+            "你建的规则属于这个 App 的专属规则，严格模式下也会参与；想只测一条，请先关掉其它用户规则。",
             style = MaterialTheme.typography.bodySmall,
             color = JournalColors.inkSoft,
         )
         if (rules.isEmpty()) {
             Text(
-                "还没有自定义规则。抓一张广告页，点里面的「跳过」节点即可生成。",
+                "还没有自定义规则。抓一张广告页，在截图上点一下「跳过 / 关闭」的位置，再保存即可。",
                 style = MaterialTheme.typography.bodySmall,
                 color = JournalColors.inkSoft,
             )
         } else {
             rules.forEach { rule ->
+                val clickWithoutLocator = rule.action.type == "click" &&
+                    rule.match.any.none { !it.viewId.isNullOrBlank() || !it.text.isNullOrBlank() }
                 Card(
                     shape = RoundedCornerShape(18.dp),
                     colors = CardDefaults.cardColors(containerColor = JournalColors.card),
@@ -738,6 +760,13 @@ private fun StudioList(
                                 maxLines = 2,
                                 overflow = TextOverflow.Ellipsis,
                             )
+                            if (clickWithoutLocator) {
+                                Text(
+                                    "⚠ 只按描述匹配却用「点击节点」，运行时可能定位不到；建议删除后重新抓图，在截图上点一下跳过位置。",
+                                    style = MaterialTheme.typography.bodySmall,
+                                    color = JournalColors.danger,
+                                )
+                            }
                         }
                         Switch(checked = rule.enabled, onCheckedChange = { onToggleRule(rule, it) })
                         TextButton(onClick = { onDeleteRule(rule) }) { Text("删除", color = Color(0xFFC96A5B)) }
@@ -895,6 +924,9 @@ private fun RuleEditor(
         Text("没有可编辑的规则", modifier = Modifier.padding(24.dp))
         return
     }
+    val nodeRelocatable = node == null || !node.text.isNullOrBlank() || !node.viewId.isNullOrBlank()
+    val nodeClickable = node?.clickable ?: true
+    val clickBlocked = d.actionType == "click" && node != null && !(nodeRelocatable && nodeClickable)
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -943,6 +975,7 @@ private fun RuleEditor(
         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             OutlinedButton(
                 onClick = { onChange(d.copy(actionType = "click")) },
+                enabled = nodeRelocatable && nodeClickable,
                 border = BorderStroke(1.dp, if (d.actionType == "click") JournalColors.caramel else JournalColors.border),
                 shape = RoundedCornerShape(14.dp),
                 modifier = Modifier.weight(1f),
@@ -988,12 +1021,20 @@ private fun RuleEditor(
             )
         }
 
+        if (clickBlocked) {
+            Text(
+                "这个节点没有文字或 ID、或者本身不可点击，运行时无法重新定位，不能用「点击节点」。请改用「按比例点击」。",
+                style = MaterialTheme.typography.bodySmall,
+                color = JournalColors.danger,
+            )
+        }
         if (message.isNotEmpty()) {
             Text(message, style = MaterialTheme.typography.bodySmall, color = JournalColors.inkSoft)
         }
 
         Button(
             onClick = onSave,
+            enabled = !clickBlocked,
             colors = ButtonDefaults.buttonColors(
                 containerColor = JournalColors.caramel,
                 contentColor = JournalColors.cream,

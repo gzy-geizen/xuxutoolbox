@@ -2,6 +2,7 @@ package com.cx330.toolbox.core.inspect
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
+import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
@@ -12,6 +13,7 @@ class CapturePointRuleTest {
         text: String? = null,
         desc: String? = null,
         clickable: Boolean = false,
+        viewId: String? = null,
         children: List<InspectNode> = emptyList(),
     ) = InspectNode(
         depth = 1,
@@ -21,6 +23,7 @@ class CapturePointRuleTest {
         text = text,
         contentDescription = desc,
         clickable = clickable,
+        viewId = viewId,
         bounds = bounds,
         children = children,
     )
@@ -56,6 +59,16 @@ class CapturePointRuleTest {
         assertEquals(null, pick!!.node)
         assertEquals(0.5f, pick.tapXRatioOnScreen, 0.01f)
         assertEquals(0.5f, pick.tapYRatioOnScreen, 0.01f)
+    }
+
+    @Test
+    fun frameworkRootDoesNotBecomeRuleMatch() {
+        val decor = node("[0,0][1280,2772]", viewId = "android:id/decor_content_parent")
+        val root = node("[0,0][1280,2772]", children = listOf(decor))
+        val pick = CapturePointRule.pick(root, 640, 1386, 1280, 2772)
+        assertNotNull(pick)
+        assertNull(pick!!.node)
+        assertEquals(0.5f, pick.tapXRatioOnScreen, 0.01f)
     }
 
     @Test

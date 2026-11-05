@@ -70,7 +70,7 @@ data class UserRuleDraft(
             guard = Guard(forbidTextRegex = RuleDefaults.FORBID_TEXT_REGEX),
             action = RuleAction(
                 type = actionType,
-                fallback = "none",
+                fallback = if (actionType == "click") "gesture-center" else "none",
                 tapXRatio = if (actionType == "tap") tapXRatio else null,
                 tapYRatio = if (actionType == "tap") tapYRatio else null,
                 anchor = anchor,

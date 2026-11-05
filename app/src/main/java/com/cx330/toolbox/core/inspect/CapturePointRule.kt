@@ -71,6 +71,15 @@ object CapturePointRule {
         }
     }
 
+    /** 系统窗口根容器不是“广告控件”，不能拿来生成匹配规则。 */
+    private fun isFrameworkRoot(node: InspectNode): Boolean {
+        val id = node.viewId?.trim().orEmpty()
+        return id == "android:id/decor_content_parent" ||
+            id == "decor_content_parent" ||
+            id == "android:id/content" ||
+            id == "content"
+    }
+
     fun pick(root: InspectNode, tapX: Int, tapY: Int, screenWidth: Int, screenHeight: Int): Pick? {
         if (screenWidth <= 0 || screenHeight <= 0) return null
         val screenX = tapX.toFloat() / screenWidth
@@ -95,9 +104,23 @@ object CapturePointRule {
         val clickable = inside.filter { it.clickable }.minByOrNull { areaOf(it) }
         val screenArea = screenWidth.toLong() * screenHeight
         val bigContainer = inside
-            .filter { areaOf(it) * 100 >= screenArea * 20 && hasMatchInfo(it) }
+            .filter { areaOf(it) * 100 >= screenArea * 20 && hasMatchInfo(it) && !isFrameworkRoot(it) }
             .maxByOrNull { areaOf(it) }
-        val chosen = keywordClickable ?: clickable ?: bigContainer ?: inside.maxByOrNull { areaOf(it) }!!
+        val fallback = inside
+            .filter { !isFrameworkRoot(it) }
+            .maxByOrNull { areaOf(it) }
+        val chosen = keywordClickable ?: clickable ?: bigContainer ?: fallback
+        if (chosen == null) {
+            return Pick(
+                node = null,
+                tapXRatioInNode = screenX,
+                tapYRatioInNode = screenY,
+                tapXRatioOnScreen = screenX,
+                tapYRatioOnScreen = screenY,
+                reason = "命中整屏容器但没有可写规则的控件，将按整屏比例点击",
+                hasKeyword = false,
+            )
+        }
         if (chosen !in listOfNotNull(keywordClickable, clickable, bigContainer) && !hasMatchInfo(chosen)) {
             return Pick(
                 node = null,

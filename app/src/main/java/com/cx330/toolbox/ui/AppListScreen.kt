@@ -124,7 +124,7 @@ fun AppListScreen(onBack: () -> Unit) {
         )
 
         Text(
-            text = "${filtered.size} 个应用 · 关闭开关后不再跳过 · 点「严格模式」可单独设置",
+            text = "${filtered.size} 个应用 · 关闭开关后不再跳过 · 点「策略」可单独设置",
             style = MaterialTheme.typography.bodySmall,
             color = JournalColors.inkSoft,
             modifier = Modifier.padding(horizontal = 24.dp, vertical = 10.dp),
@@ -255,9 +255,9 @@ private fun AppRow(app: AppEntry, config: ConfigStore, onChanged: () -> Unit) {
             )
             Text(
                 text = when (appMode) {
-                    AppStrictMode.FOLLOW -> "严格模式：跟随默认"
-                    AppStrictMode.STRICT -> "严格模式：严格"
-                    AppStrictMode.LOOSE -> "严格模式：通用兜底"
+                    AppStrictMode.FOLLOW -> "策略：跟随默认"
+                    AppStrictMode.STRICT -> "策略：严格"
+                    AppStrictMode.LOOSE -> "策略：宽松（允许通用兜底）"
                 },
                 style = MaterialTheme.typography.bodySmall,
                 color = if (safetyExcluded) JournalColors.inkSoft else JournalColors.caramel,
@@ -296,23 +296,23 @@ private fun AppRow(app: AppEntry, config: ConfigStore, onChanged: () -> Unit) {
             text = {
                 Column {
                     Text(
-                        "严格模式只用 App 专属规则；通用模式额外允许通用「跳过」兜底。",
+                        "严格 = 只用这个 App 的专属规则（内置专属规则和你自建的都算），不会用通用「跳过」兜底；宽松 = 额外允许通用兜底。",
                         style = MaterialTheme.typography.bodySmall,
                         color = JournalColors.inkSoft,
                     )
-                    ModeChoice("跟随默认（当前全局：${if (config.strictMode) "严格" else "通用"}）") {
+                    ModeChoice("跟随默认（当前全局：${if (config.strictMode) "严格" else "宽松"}）") {
                         config.setAppStrictMode(app.packageName, AppStrictMode.FOLLOW)
                         appMode = AppStrictMode.FOLLOW
                         showModeDialog = false
                         onChanged()
                     }
-                    ModeChoice("强制严格（只用专属规则）") {
+                    ModeChoice("强制严格（只用 App 专属规则）") {
                         config.setAppStrictMode(app.packageName, AppStrictMode.STRICT)
                         appMode = AppStrictMode.STRICT
                         showModeDialog = false
                         onChanged()
                     }
-                    ModeChoice("强制通用（允许「跳过」兜底）") {
+                    ModeChoice("强制宽松（允许通用「跳过」兜底）") {
                         config.setAppStrictMode(app.packageName, AppStrictMode.LOOSE)
                         appMode = AppStrictMode.LOOSE
                         showModeDialog = false
