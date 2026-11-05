@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- S2：常驻通知需要（Android 13+ 运行时权限） -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- S4/S9：前台服务保活（防 HyperOS 冻结进程） -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <!-- S9：重启后重新排健康检查 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- S8：包可见性。只声明需要的两类查询，不申请 QUERY_ALL_PACKAGES。
+         1) 有启动图标的应用 → 应用列表 / 开屏广告目标集合
+         2) 桌面（HOME）→ 流水线里跳过桌面事件 -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.HOME" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".Cx330App"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Cx330toolbox">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.inspect"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/inspect_file_paths" />
+        </provider>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Cx330toolbox"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- S2：无障碍服务。exported=true 是给 system_server 跨进程绑定用的，
+             权限 BIND_ACCESSIBILITY_SERVICE 保证普通应用无法绑定。 -->
+        <service
+            android:name=".service.MyAccessibilityService"
+            android:exported="true"
+            android:label="@string/accessibility_service_label"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+        <!-- S4/S9：保活前台服务 -->
+        <service
+            android:name=".service.KeepAliveService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="splash_ad_detection_and_accessibility_keepalive" />
+        </service>
+
+        <receiver
+            android:name=".core.inspect.CaptureActionReceiver"
+            android:exported="false" />
+
+        <!-- S9：周期性健康检查（服务掉了就发通知） -->
+        <receiver
+            android:name=".core.health.HealthCheckReceiver"
+            android:exported="false" />
+
+        <!-- S9：重启后重新排一次检查 -->
+        <receiver
+            android:name=".core.health.BootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

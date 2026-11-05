@@ -1,0 +1,31 @@
+# Add project specific R8 rules here.
+# AGP will combine all keep rule files in src/main/keepRules to pass to R8
+#
+# 本项目用 kotlinx.serialization：保留序列化相关元信息与生成的 serializer。
+
+-keepattributes RuntimeVisibleAnnotations,AnnotationDefault,InnerClasses,EnclosingMethod
+
+# 规则数据类（@Serializable）的元信息
+-keepclassmembers @kotlinx.serialization.Serializable class com.cx330.toolbox.** {
+    <fields>;
+    <init>(...);
+}
+
+# 生成的 serializer 单例
+-keep class com.cx330.toolbox.**$$serializer { *; }
+-keep class com.cx330.toolbox.**$Companion { *; }
+
+# kotlinx.serialization 内部实现（避免 R8 过度裁剪）
+-dontwarn kotlinx.serialization.**
+-keep class kotlinx.serialization.** { *; }
+
+# R8 全量优化会把 Kotlin 内部类（如 kotlin.sequences.*）做类合并，
+# 与 kotlinx.coroutines 的内部继承关系冲突，release 启动会把服务打崩
+# （IllegalAccessError: kotlin.sequences.d extended by ... is inaccessible）。
+# 因此关闭优化阶段，只保留裁剪（-dontoptimize 不影响 minify/shrink）。
+-dontoptimize
+
+# 协程与 Kotlin 标准库的关键内部类保留继承/可访问性
+-keep class kotlinx.coroutines.** { *; }
+-keep class kotlin.sequences.** { *; }
+

@@ -1,0 +1,328 @@
+{
+    "viewId":  null,
+    "className":  "android.widget.FrameLayout",
+    "text":  null,
+    "contentDescription":  null,
+    "clickable":  false,
+    "enabled":  false,
+    "visibleToUser":  false,
+    "bounds":  {
+                   "left":  0,
+                   "right":  1280,
+                   "bottom":  2772,
+                   "top":  0
+               },
+    "depth":  0,
+    "indexInParent":  0,
+    "packageName":  "com.MobileTicket",
+    "children":  [
+                     {
+                         "viewId":  null,
+                         "className":  "android.widget.LinearLayout",
+                         "text":  null,
+                         "contentDescription":  null,
+                         "clickable":  false,
+                         "enabled":  false,
+                         "visibleToUser":  false,
+                         "bounds":  {
+                                        "left":  0,
+                                        "right":  1280,
+                                        "bottom":  2772,
+                                        "top":  0
+                                    },
+                         "depth":  1,
+                         "indexInParent":  0,
+                         "packageName":  "com.MobileTicket",
+                         "children":  [
+                                          {
+                                              "viewId":  "android:id/content",
+                                              "className":  "android.widget.FrameLayout",
+                                              "text":  null,
+                                              "contentDescription":  null,
+                                              "clickable":  false,
+                                              "enabled":  false,
+                                              "visibleToUser":  false,
+                                              "bounds":  {
+                                                             "left":  0,
+                                                             "right":  1280,
+                                                             "bottom":  2772,
+                                                             "top":  0
+                                                         },
+                                              "depth":  2,
+                                              "indexInParent":  0,
+                                              "packageName":  "com.MobileTicket",
+                                              "children":  [
+                                                               {
+                                                                   "viewId":  "com.MobileTicket:id/ll_splash_ad_container",
+                                                                   "className":  "android.widget.LinearLayout",
+                                                                   "text":  null,
+                                                                   "contentDescription":  null,
+                                                                   "clickable":  false,
+                                                                   "enabled":  false,
+                                                                   "visibleToUser":  false,
+                                                                   "bounds":  {
+                                                                                  "left":  0,
+                                                                                  "right":  1280,
+                                                                                  "bottom":  2772,
+                                                                                  "top":  0
+                                                                              },
+                                                                   "depth":  3,
+                                                                   "indexInParent":  0,
+                                                                   "packageName":  "com.MobileTicket",
+                                                                   "children":  [
+                                                                                    {
+                                                                                        "viewId":  "com.MobileTicket:id/fl_adContent_container",
+                                                                                        "className":  "android.widget.FrameLayout",
+                                                                                        "text":  null,
+                                                                                        "contentDescription":  null,
+                                                                                        "clickable":  false,
+                                                                                        "enabled":  false,
+                                                                                        "visibleToUser":  false,
+                                                                                        "bounds":  {
+                                                                                                       "left":  0,
+                                                                                                       "right":  1280,
+                                                                                                       "bottom":  2771,
+                                                                                                       "top":  0
+                                                                                                   },
+                                                                                        "depth":  4,
+                                                                                        "indexInParent":  0,
+                                                                                        "packageName":  "com.MobileTicket",
+                                                                                        "children":  [
+                                                                                                         {
+                                                                                                             "viewId":  "com.MobileTicket:id/img_adContent",
+                                                                                                             "className":  "android.widget.ImageView",
+                                                                                                             "text":  null,
+                                                                                                             "contentDescription":  "广告",
+                                                                                                             "clickable":  true,
+                                                                                                             "enabled":  false,
+                                                                                                             "visibleToUser":  false,
+                                                                                                             "bounds":  {
+                                                                                                                            "left":  0,
+                                                                                                                            "right":  1280,
+                                                                                                                            "bottom":  2771,
+                                                                                                                            "top":  0
+                                                                                                                        },
+                                                                                                             "depth":  5,
+                                                                                                             "indexInParent":  0,
+                                                                                                             "packageName":  "com.MobileTicket",
+                                                                                                             "children":  [
+
+                                                                                                                          ]
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "viewId":  "com.MobileTicket:id/img_top_left_logo",
+                                                                                                             "className":  "android.widget.TextView",
+                                                                                                             "text":  null,
+                                                                                                             "contentDescription":  null,
+                                                                                                             "clickable":  false,
+                                                                                                             "enabled":  false,
+                                                                                                             "visibleToUser":  false,
+                                                                                                             "bounds":  {
+                                                                                                                            "left":  65,
+                                                                                                                            "right":  390,
+                                                                                                                            "bottom":  227,
+                                                                                                                            "top":  146
+                                                                                                                        },
+                                                                                                             "depth":  5,
+                                                                                                             "indexInParent":  1,
+                                                                                                             "packageName":  "com.MobileTicket",
+                                                                                                             "children":  [
+
+                                                                                                                          ]
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "viewId":  "com.MobileTicket:id/fl_skip_wrong",
+                                                                                                             "className":  "android.widget.FrameLayout",
+                                                                                                             "text":  null,
+                                                                                                             "contentDescription":  null,
+                                                                                                             "clickable":  true,
+                                                                                                             "enabled":  false,
+                                                                                                             "visibleToUser":  false,
+                                                                                                             "bounds":  {
+                                                                                                                            "left":  890,
+                                                                                                                            "right":  1280,
+                                                                                                                            "bottom":  423,
+                                                                                                                            "top":  0
+                                                                                                                        },
+                                                                                                             "depth":  5,
+                                                                                                             "indexInParent":  2,
+                                                                                                             "packageName":  "com.MobileTicket",
+                                                                                                             "children":  [
+                                                                                                                              {
+                                                                                                                                  "viewId":  "com.MobileTicket:id/tv_skip",
+                                                                                                                                  "className":  "android.widget.TextView",
+                                                                                                                                  "text":  null,
+                                                                                                                                  "contentDescription":  null,
+                                                                                                                                  "clickable":  true,
+                                                                                                                                  "enabled":  false,
+                                                                                                                                  "visibleToUser":  false,
+                                                                                                                                  "bounds":  {
+                                                                                                                                                 "left":  1046,
+                                                                                                                                                 "right":  1202,
+                                                                                                                                                 "bottom":  244,
+                                                                                                                                                 "top":  163
+                                                                                                                                             },
+                                                                                                                                  "depth":  6,
+                                                                                                                                  "indexInParent":  0,
+                                                                                                                                  "packageName":  "com.MobileTicket",
+                                                                                                                                  "children":  [
+
+                                                                                                                                               ]
+                                                                                                                              }
+                                                                                                                          ]
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "viewId":  null,
+                                                                                                             "className":  "android.view.ViewGroup",
+                                                                                                             "text":  null,
+                                                                                                             "contentDescription":  null,
+                                                                                                             "clickable":  false,
+                                                                                                             "enabled":  false,
+                                                                                                             "visibleToUser":  false,
+                                                                                                             "bounds":  {
+                                                                                                                            "left":  165,
+                                                                                                                            "right":  1114,
+                                                                                                                            "bottom":  2524,
+                                                                                                                            "top":  1841
+                                                                                                                        },
+                                                                                                             "depth":  5,
+                                                                                                             "indexInParent":  3,
+                                                                                                             "packageName":  "com.MobileTicket",
+                                                                                                             "children":  [
+                                                                                                                              {
+                                                                                                                                  "viewId":  "com.MobileTicket:id/lottie_scroll_view",
+                                                                                                                                  "className":  "android.widget.ImageView",
+                                                                                                                                  "text":  null,
+                                                                                                                                  "contentDescription":  null,
+                                                                                                                                  "clickable":  false,
+                                                                                                                                  "enabled":  false,
+                                                                                                                                  "visibleToUser":  false,
+                                                                                                                                  "bounds":  {
+                                                                                                                                                 "left":  549,
+                                                                                                                                                 "right":  731,
+                                                                                                                                                 "bottom":  2231,
+                                                                                                                                                 "top":  1841
+                                                                                                                                             },
+                                                                                                                                  "depth":  6,
+                                                                                                                                  "indexInParent":  0,
+                                                                                                                                  "packageName":  "com.MobileTicket",
+                                                                                                                                  "children":  [
+
+                                                                                                                                               ]
+                                                                                                                              },
+                                                                                                                              {
+                                                                                                                                  "viewId":  "com.MobileTicket:id/cl_button_container",
+                                                                                                                                  "className":  "android.view.ViewGroup",
+                                                                                                                                  "text":  null,
+                                                                                                                                  "contentDescription":  null,
+                                                                                                                                  "clickable":  true,
+                                                                                                                                  "enabled":  false,
+                                                                                                                                  "visibleToUser":  false,
+                                                                                                                                  "bounds":  {
+                                                                                                                                                 "left":  165,
+                                                                                                                                                 "right":  1114,
+                                                                                                                                                 "bottom":  2524,
+                                                                                                                                                 "top":  2296
+                                                                                                                                             },
+                                                                                                                                  "depth":  6,
+                                                                                                                                  "indexInParent":  1,
+                                                                                                                                  "packageName":  "com.MobileTicket",
+                                                                                                                                  "children":  [
+                                                                                                                                                   {
+                                                                                                                                                       "viewId":  "com.MobileTicket:id/lottie_button_view",
+                                                                                                                                                       "className":  "android.widget.ImageView",
+                                                                                                                                                       "text":  null,
+                                                                                                                                                       "contentDescription":  null,
+                                                                                                                                                       "clickable":  false,
+                                                                                                                                                       "enabled":  false,
+                                                                                                                                                       "visibleToUser":  false,
+                                                                                                                                                       "bounds":  {
+                                                                                                                                                                      "left":  165,
+                                                                                                                                                                      "right":  1114,
+                                                                                                                                                                      "bottom":  2524,
+                                                                                                                                                                      "top":  2296
+                                                                                                                                                                  },
+                                                                                                                                                       "depth":  7,
+                                                                                                                                                       "indexInParent":  0,
+                                                                                                                                                       "packageName":  "com.MobileTicket",
+                                                                                                                                                       "children":  [
+
+                                                                                                                                                                    ]
+                                                                                                                                                   },
+                                                                                                                                                   {
+                                                                                                                                                       "viewId":  "com.MobileTicket:id/tv_button_text",
+                                                                                                                                                       "className":  "android.widget.TextView",
+                                                                                                                                                       "text":  "上滑或点击跳转至详情页",
+                                                                                                                                                       "contentDescription":  null,
+                                                                                                                                                       "clickable":  false,
+                                                                                                                                                       "enabled":  false,
+                                                                                                                                                       "visibleToUser":  false,
+                                                                                                                                                       "bounds":  {
+                                                                                                                                                                      "left":  354,
+                                                                                                                                                                      "right":  926,
+                                                                                                                                                                      "bottom":  2445,
+                                                                                                                                                                      "top":  2375
+                                                                                                                                                                  },
+                                                                                                                                                       "depth":  7,
+                                                                                                                                                       "indexInParent":  1,
+                                                                                                                                                       "packageName":  "com.MobileTicket",
+                                                                                                                                                       "children":  [
+
+                                                                                                                                                                    ]
+                                                                                                                                                   },
+                                                                                                                                                   {
+                                                                                                                                                       "viewId":  "com.MobileTicket:id/iv_right_arrow",
+                                                                                                                                                       "className":  "android.widget.ImageView",
+                                                                                                                                                       "text":  null,
+                                                                                                                                                       "contentDescription":  null,
+                                                                                                                                                       "clickable":  false,
+                                                                                                                                                       "enabled":  false,
+                                                                                                                                                       "visibleToUser":  false,
+                                                                                                                                                       "bounds":  {
+                                                                                                                                                                      "left":  939,
+                                                                                                                                                                      "right":  965,
+                                                                                                                                                                      "bottom":  2436,
+                                                                                                                                                                      "top":  2384
+                                                                                                                                                                  },
+                                                                                                                                                       "depth":  7,
+                                                                                                                                                       "indexInParent":  2,
+                                                                                                                                                       "packageName":  "com.MobileTicket",
+                                                                                                                                                       "children":  [
+
+                                                                                                                                                                    ]
+                                                                                                                                                   }
+                                                                                                                                               ]
+                                                                                                                              }
+                                                                                                                          ]
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "viewId":  "com.MobileTicket:id/tv_adFlag",
+                                                                                                             "className":  "android.widget.TextView",
+                                                                                                             "text":  "广告",
+                                                                                                             "contentDescription":  null,
+                                                                                                             "clickable":  false,
+                                                                                                             "enabled":  false,
+                                                                                                             "visibleToUser":  false,
+                                                                                                             "bounds":  {
+                                                                                                                            "left":  1135,
+                                                                                                                            "right":  1215,
+                                                                                                                            "bottom":  2706,
+                                                                                                                            "top":  2647
+                                                                                                                        },
+                                                                                                             "depth":  5,
+                                                                                                             "indexInParent":  4,
+                                                                                                             "packageName":  "com.MobileTicket",
+                                                                                                             "children":  [
+
+                                                                                                                          ]
+                                                                                                         }
+                                                                                                     ]
+                                                                                    }
+                                                                                ]
+                                                               }
+                                                           ]
+                                          }
+                                      ]
+                     }
+                 ]
+}

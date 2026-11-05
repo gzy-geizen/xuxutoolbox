@@ -1,0 +1,1 @@
+{"version":2,"rules":[{"id":"bad.unknown","match":{"any":[{"text":"跳过"}]},"action":{"type":"click"},"surprise":true}]}

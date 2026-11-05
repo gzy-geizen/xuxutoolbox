@@ -1,0 +1,222 @@
+{
+    "viewId":  null,
+    "className":  "android.widget.FrameLayout",
+    "text":  null,
+    "contentDescription":  null,
+    "clickable":  false,
+    "enabled":  false,
+    "visibleToUser":  false,
+    "bounds":  {
+                   "left":  0,
+                   "right":  1280,
+                   "bottom":  2772,
+                   "top":  0
+               },
+    "depth":  0,
+    "indexInParent":  0,
+    "packageName":  "com.ai.obc.cbn.app",
+    "children":  [
+                     {
+                         "viewId":  null,
+                         "className":  "android.widget.LinearLayout",
+                         "text":  null,
+                         "contentDescription":  null,
+                         "clickable":  false,
+                         "enabled":  false,
+                         "visibleToUser":  false,
+                         "bounds":  {
+                                        "left":  0,
+                                        "right":  1280,
+                                        "bottom":  2772,
+                                        "top":  0
+                                    },
+                         "depth":  1,
+                         "indexInParent":  0,
+                         "packageName":  "com.ai.obc.cbn.app",
+                         "children":  [
+                                          {
+                                              "viewId":  null,
+                                              "className":  "android.widget.FrameLayout",
+                                              "text":  null,
+                                              "contentDescription":  null,
+                                              "clickable":  false,
+                                              "enabled":  false,
+                                              "visibleToUser":  false,
+                                              "bounds":  {
+                                                             "left":  0,
+                                                             "right":  1280,
+                                                             "bottom":  2772,
+                                                             "top":  0
+                                                         },
+                                              "depth":  2,
+                                              "indexInParent":  0,
+                                              "packageName":  "com.ai.obc.cbn.app",
+                                              "children":  [
+                                                               {
+                                                                   "viewId":  "com.ai.obc.cbn.app:id/action_bar_root",
+                                                                   "className":  "android.widget.LinearLayout",
+                                                                   "text":  null,
+                                                                   "contentDescription":  null,
+                                                                   "clickable":  false,
+                                                                   "enabled":  false,
+                                                                   "visibleToUser":  false,
+                                                                   "bounds":  {
+                                                                                  "left":  0,
+                                                                                  "right":  1280,
+                                                                                  "bottom":  2772,
+                                                                                  "top":  0
+                                                                              },
+                                                                   "depth":  3,
+                                                                   "indexInParent":  0,
+                                                                   "packageName":  "com.ai.obc.cbn.app",
+                                                                   "children":  [
+                                                                                    {
+                                                                                        "viewId":  "android:id/content",
+                                                                                        "className":  "android.widget.FrameLayout",
+                                                                                        "text":  null,
+                                                                                        "contentDescription":  null,
+                                                                                        "clickable":  false,
+                                                                                        "enabled":  false,
+                                                                                        "visibleToUser":  false,
+                                                                                        "bounds":  {
+                                                                                                       "left":  0,
+                                                                                                       "right":  1280,
+                                                                                                       "bottom":  2772,
+                                                                                                       "top":  0
+                                                                                                   },
+                                                                                        "depth":  4,
+                                                                                        "indexInParent":  0,
+                                                                                        "packageName":  "com.ai.obc.cbn.app",
+                                                                                        "children":  [
+                                                                                                         {
+                                                                                                             "viewId":  null,
+                                                                                                             "className":  "android.widget.RelativeLayout",
+                                                                                                             "text":  null,
+                                                                                                             "contentDescription":  null,
+                                                                                                             "clickable":  false,
+                                                                                                             "enabled":  false,
+                                                                                                             "visibleToUser":  false,
+                                                                                                             "bounds":  {
+                                                                                                                            "left":  0,
+                                                                                                                            "right":  1280,
+                                                                                                                            "bottom":  2772,
+                                                                                                                            "top":  0
+                                                                                                                        },
+                                                                                                             "depth":  5,
+                                                                                                             "indexInParent":  0,
+                                                                                                             "packageName":  "com.ai.obc.cbn.app",
+                                                                                                             "children":  [
+                                                                                                                              {
+                                                                                                                                  "viewId":  "com.ai.obc.cbn.app:id/batch_fl_action",
+                                                                                                                                  "className":  "android.widget.FrameLayout",
+                                                                                                                                  "text":  null,
+                                                                                                                                  "contentDescription":  null,
+                                                                                                                                  "clickable":  false,
+                                                                                                                                  "enabled":  false,
+                                                                                                                                  "visibleToUser":  false,
+                                                                                                                                  "bounds":  {
+                                                                                                                                                 "left":  0,
+                                                                                                                                                 "right":  1280,
+                                                                                                                                                 "bottom":  2772,
+                                                                                                                                                 "top":  0
+                                                                                                                                             },
+                                                                                                                                  "depth":  6,
+                                                                                                                                  "indexInParent":  0,
+                                                                                                                                  "packageName":  "com.ai.obc.cbn.app",
+                                                                                                                                  "children":  [
+                                                                                                                                                   {
+                                                                                                                                                       "viewId":  null,
+                                                                                                                                                       "className":  "android.widget.FrameLayout",
+                                                                                                                                                       "text":  null,
+                                                                                                                                                       "contentDescription":  null,
+                                                                                                                                                       "clickable":  false,
+                                                                                                                                                       "enabled":  false,
+                                                                                                                                                       "visibleToUser":  false,
+                                                                                                                                                       "bounds":  {
+                                                                                                                                                                      "left":  0,
+                                                                                                                                                                      "right":  1280,
+                                                                                                                                                                      "bottom":  2772,
+                                                                                                                                                                      "top":  0
+                                                                                                                                                                  },
+                                                                                                                                                       "depth":  7,
+                                                                                                                                                       "indexInParent":  0,
+                                                                                                                                                       "packageName":  "com.ai.obc.cbn.app",
+                                                                                                                                                       "children":  [
+                                                                                                                                                                        {
+                                                                                                                                                                            "viewId":  "com.ai.obc.cbn.app:id/flSplashBase",
+                                                                                                                                                                            "className":  "android.widget.FrameLayout",
+                                                                                                                                                                            "text":  null,
+                                                                                                                                                                            "contentDescription":  null,
+                                                                                                                                                                            "clickable":  true,
+                                                                                                                                                                            "enabled":  false,
+                                                                                                                                                                            "visibleToUser":  false,
+                                                                                                                                                                            "bounds":  {
+                                                                                                                                                                                           "left":  0,
+                                                                                                                                                                                           "right":  1280,
+                                                                                                                                                                                           "bottom":  2772,
+                                                                                                                                                                                           "top":  0
+                                                                                                                                                                                       },
+                                                                                                                                                                            "depth":  8,
+                                                                                                                                                                            "indexInParent":  0,
+                                                                                                                                                                            "packageName":  "com.ai.obc.cbn.app",
+                                                                                                                                                                            "children":  [
+                                                                                                                                                                                             {
+                                                                                                                                                                                                 "viewId":  null,
+                                                                                                                                                                                                 "className":  "android.view.SurfaceView",
+                                                                                                                                                                                                 "text":  null,
+                                                                                                                                                                                                 "contentDescription":  null,
+                                                                                                                                                                                                 "clickable":  false,
+                                                                                                                                                                                                 "enabled":  false,
+                                                                                                                                                                                                 "visibleToUser":  false,
+                                                                                                                                                                                                 "bounds":  {
+                                                                                                                                                                                                                "left":  0,
+                                                                                                                                                                                                                "right":  1280,
+                                                                                                                                                                                                                "bottom":  2772,
+                                                                                                                                                                                                                "top":  0
+                                                                                                                                                                                                            },
+                                                                                                                                                                                                 "depth":  9,
+                                                                                                                                                                                                 "indexInParent":  0,
+                                                                                                                                                                                                 "packageName":  "com.ai.obc.cbn.app",
+                                                                                                                                                                                                 "children":  [
+
+                                                                                                                                                                                                              ]
+                                                                                                                                                                                             }
+                                                                                                                                                                                         ]
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                            "viewId":  "com.ai.obc.cbn.app:id/tvTg",
+                                                                                                                                                                            "className":  "android.widget.TextView",
+                                                                                                                                                                            "text":  "2s 跳过",
+                                                                                                                                                                            "contentDescription":  null,
+                                                                                                                                                                            "clickable":  true,
+                                                                                                                                                                            "enabled":  false,
+                                                                                                                                                                            "visibleToUser":  false,
+                                                                                                                                                                            "bounds":  {
+                                                                                                                                                                                           "left":  1013,
+                                                                                                                                                                                           "right":  1227,
+                                                                                                                                                                                           "bottom":  218,
+                                                                                                                                                                                           "top":  124
+                                                                                                                                                                                       },
+                                                                                                                                                                            "depth":  8,
+                                                                                                                                                                            "indexInParent":  1,
+                                                                                                                                                                            "packageName":  "com.ai.obc.cbn.app",
+                                                                                                                                                                            "children":  [
+
+                                                                                                                                                                                         ]
+                                                                                                                                                                        }
+                                                                                                                                                                    ]
+                                                                                                                                                   }
+                                                                                                                                               ]
+                                                                                                                              }
+                                                                                                                          ]
+                                                                                                         }
+                                                                                                     ]
+                                                                                    }
+                                                                                ]
+                                                               }
+                                                           ]
+                                          }
+                                      ]
+                     }
+                 ]
+}

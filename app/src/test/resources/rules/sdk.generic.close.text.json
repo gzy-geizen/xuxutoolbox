@@ -1,0 +1,5 @@
+{
+  "packageName": "com.demo.app",
+  "bounds": {"left":0,"top":0,"right":1280,"bottom":2772},
+  "children": [ {"packageName":"com.demo.app","bounds":{"left":900,"top":2200,"right":1000,"bottom":2300},"text":"关闭广告 3","clickable":true} ]
+}

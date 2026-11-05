@@ -1,0 +1,12 @@
+{
+  "packageName": "com.demo.app",
+  "bounds": {"left":0,"top":0,"right":1280,"bottom":2772},
+  "children": [
+    {
+      "packageName": "com.demo.app",
+      "bounds": {"left":1013,"top":124,"right":1227,"bottom":218},
+      "text": "跳过",
+      "clickable": true
+    }
+  ]
+}

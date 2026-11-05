@@ -1,0 +1,20 @@
+﻿<resources>
+    <string name="app_name">须须工具箱</string>
+
+    <!-- 无障碍服务（S2） -->
+    <string name="accessibility_service_label">须须工具箱 自动跳过</string>
+    <string name="accessibility_service_description">用于识别并跳过开屏广告：读取当前屏幕控件信息，在本地完成匹配与点击；不联网、不上传任何内容，可随时在系统设置中关闭。</string>
+    <string name="accessibility_service_summary">读取屏幕控件并自动点击「跳过 / 关闭」按钮</string>
+
+    <!-- 常驻通知（S2） -->
+    <string name="notification_channel_name">运行状态</string>
+    <string name="notification_channel_desc">显示须须工具箱的运行状态</string>
+    <string name="notification_title">须须工具箱运行中</string>
+    <string name="notification_text">无障碍服务已开启，正在监听窗口事件</string>
+
+    <!-- 断线提醒（S9） -->
+    <string name="alert_channel_name">服务断开提醒</string>
+    <string name="alert_channel_desc">无障碍服务被关闭或回收时提醒</string>
+    <string name="alert_title">须须工具箱已断开</string>
+    <string name="alert_text">点此重新开启无障碍服务（或检查省电/自启动设置）</string>
+</resources>

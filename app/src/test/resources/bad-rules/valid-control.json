@@ -1,0 +1,1 @@
+{"version":2,"rules":[{"id":"ok.rule","match":{"any":[{"text":"跳过"}]},"action":{"type":"click"}}]}

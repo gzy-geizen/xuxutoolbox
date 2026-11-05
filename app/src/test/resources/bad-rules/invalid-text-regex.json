@@ -1,0 +1,1 @@
+{"version":2,"rules":[{"id":"bad.regex","match":{"any":[{"textRegex":"["}]},"action":{"type":"click"}}]}

@@ -1,0 +1,1 @@
+{"version":2,"rules":[{"id":"bad.action","match":{"any":[{"text":"跳过"}]},"action":{"type":"swipe"}}]}

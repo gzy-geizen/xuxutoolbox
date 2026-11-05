@@ -1,0 +1,592 @@
+{
+    "viewId":  null,
+    "className":  "android.widget.FrameLayout",
+    "text":  null,
+    "contentDescription":  null,
+    "clickable":  false,
+    "enabled":  false,
+    "visibleToUser":  false,
+    "bounds":  {
+                   "left":  0,
+                   "right":  1280,
+                   "bottom":  2772,
+                   "top":  0
+               },
+    "depth":  0,
+    "indexInParent":  0,
+    "packageName":  "com.xunlei.downloadprovider",
+    "children":  [
+                     {
+                         "viewId":  null,
+                         "className":  "android.widget.LinearLayout",
+                         "text":  null,
+                         "contentDescription":  null,
+                         "clickable":  false,
+                         "enabled":  false,
+                         "visibleToUser":  false,
+                         "bounds":  {
+                                        "left":  0,
+                                        "right":  1280,
+                                        "bottom":  2772,
+                                        "top":  0
+                                    },
+                         "depth":  1,
+                         "indexInParent":  0,
+                         "packageName":  "com.xunlei.downloadprovider",
+                         "children":  [
+                                          {
+                                              "viewId":  null,
+                                              "className":  "android.widget.FrameLayout",
+                                              "text":  null,
+                                              "contentDescription":  null,
+                                              "clickable":  false,
+                                              "enabled":  false,
+                                              "visibleToUser":  false,
+                                              "bounds":  {
+                                                             "left":  0,
+                                                             "right":  1280,
+                                                             "bottom":  2772,
+                                                             "top":  0
+                                                         },
+                                              "depth":  2,
+                                              "indexInParent":  0,
+                                              "packageName":  "com.xunlei.downloadprovider",
+                                              "children":  [
+                                                               {
+                                                                   "viewId":  "com.xunlei.downloadprovider:id/action_bar_root",
+                                                                   "className":  "android.widget.LinearLayout",
+                                                                   "text":  null,
+                                                                   "contentDescription":  null,
+                                                                   "clickable":  false,
+                                                                   "enabled":  false,
+                                                                   "visibleToUser":  false,
+                                                                   "bounds":  {
+                                                                                  "left":  0,
+                                                                                  "right":  1280,
+                                                                                  "bottom":  2772,
+                                                                                  "top":  0
+                                                                              },
+                                                                   "depth":  3,
+                                                                   "indexInParent":  0,
+                                                                   "packageName":  "com.xunlei.downloadprovider",
+                                                                   "children":  [
+                                                                                    {
+                                                                                        "viewId":  "android:id/content",
+                                                                                        "className":  "android.widget.FrameLayout",
+                                                                                        "text":  null,
+                                                                                        "contentDescription":  null,
+                                                                                        "clickable":  false,
+                                                                                        "enabled":  false,
+                                                                                        "visibleToUser":  false,
+                                                                                        "bounds":  {
+                                                                                                       "left":  0,
+                                                                                                       "right":  1280,
+                                                                                                       "bottom":  2772,
+                                                                                                       "top":  0
+                                                                                                   },
+                                                                                        "depth":  4,
+                                                                                        "indexInParent":  0,
+                                                                                        "packageName":  "com.xunlei.downloadprovider",
+                                                                                        "children":  [
+                                                                                                         {
+                                                                                                             "viewId":  "com.xunlei.downloadprovider:id/root_view",
+                                                                                                             "className":  "android.view.ViewGroup",
+                                                                                                             "text":  null,
+                                                                                                             "contentDescription":  null,
+                                                                                                             "clickable":  false,
+                                                                                                             "enabled":  false,
+                                                                                                             "visibleToUser":  false,
+                                                                                                             "bounds":  {
+                                                                                                                            "left":  0,
+                                                                                                                            "right":  1280,
+                                                                                                                            "bottom":  2772,
+                                                                                                                            "top":  0
+                                                                                                                        },
+                                                                                                             "depth":  5,
+                                                                                                             "indexInParent":  0,
+                                                                                                             "packageName":  "com.xunlei.downloadprovider",
+                                                                                                             "children":  [
+                                                                                                                              {
+                                                                                                                                  "viewId":  "com.xunlei.downloadprovider:id/splash_ad_container",
+                                                                                                                                  "className":  "android.widget.FrameLayout",
+                                                                                                                                  "text":  null,
+                                                                                                                                  "contentDescription":  null,
+                                                                                                                                  "clickable":  false,
+                                                                                                                                  "enabled":  false,
+                                                                                                                                  "visibleToUser":  false,
+                                                                                                                                  "bounds":  {
+                                                                                                                                                 "left":  0,
+                                                                                                                                                 "right":  1280,
+                                                                                                                                                 "bottom":  2447,
+                                                                                                                                                 "top":  0
+                                                                                                                                             },
+                                                                                                                                  "depth":  6,
+                                                                                                                                  "indexInParent":  0,
+                                                                                                                                  "packageName":  "com.xunlei.downloadprovider",
+                                                                                                                                  "children":  [
+
+                                                                                                                                               ]
+                                                                                                                              },
+                                                                                                                              {
+                                                                                                                                  "viewId":  "com.xunlei.downloadprovider:id/hermes2_ad_container",
+                                                                                                                                  "className":  "android.widget.FrameLayout",
+                                                                                                                                  "text":  null,
+                                                                                                                                  "contentDescription":  null,
+                                                                                                                                  "clickable":  false,
+                                                                                                                                  "enabled":  false,
+                                                                                                                                  "visibleToUser":  false,
+                                                                                                                                  "bounds":  {
+                                                                                                                                                 "left":  0,
+                                                                                                                                                 "right":  1280,
+                                                                                                                                                 "bottom":  2447,
+                                                                                                                                                 "top":  0
+                                                                                                                                             },
+                                                                                                                                  "depth":  6,
+                                                                                                                                  "indexInParent":  1,
+                                                                                                                                  "packageName":  "com.xunlei.downloadprovider",
+                                                                                                                                  "children":  [
+                                                                                                                                                   {
+                                                                                                                                                       "viewId":  null,
+                                                                                                                                                       "className":  "android.view.ViewGroup",
+                                                                                                                                                       "text":  null,
+                                                                                                                                                       "contentDescription":  null,
+                                                                                                                                                       "clickable":  false,
+                                                                                                                                                       "enabled":  false,
+                                                                                                                                                       "visibleToUser":  false,
+                                                                                                                                                       "bounds":  {
+                                                                                                                                                                      "left":  0,
+                                                                                                                                                                      "right":  1280,
+                                                                                                                                                                      "bottom":  2447,
+                                                                                                                                                                      "top":  0
+                                                                                                                                                                  },
+                                                                                                                                                       "depth":  7,
+                                                                                                                                                       "indexInParent":  0,
+                                                                                                                                                       "packageName":  "com.xunlei.downloadprovider",
+                                                                                                                                                       "children":  [
+                                                                                                                                                                        {
+                                                                                                                                                                            "viewId":  null,
+                                                                                                                                                                            "className":  "android.view.ViewGroup",
+                                                                                                                                                                            "text":  null,
+                                                                                                                                                                            "contentDescription":  null,
+                                                                                                                                                                            "clickable":  false,
+                                                                                                                                                                            "enabled":  false,
+                                                                                                                                                                            "visibleToUser":  false,
+                                                                                                                                                                            "bounds":  {
+                                                                                                                                                                                           "left":  0,
+                                                                                                                                                                                           "right":  1280,
+                                                                                                                                                                                           "bottom":  2447,
+                                                                                                                                                                                           "top":  0
+                                                                                                                                                                                       },
+                                                                                                                                                                            "depth":  8,
+                                                                                                                                                                            "indexInParent":  0,
+                                                                                                                                                                            "packageName":  "com.xunlei.downloadprovider",
+                                                                                                                                                                            "children":  [
+                                                                                                                                                                                             {
+                                                                                                                                                                                                 "viewId":  null,
+                                                                                                                                                                                                 "className":  "android.widget.FrameLayout",
+                                                                                                                                                                                                 "text":  null,
+                                                                                                                                                                                                 "contentDescription":  null,
+                                                                                                                                                                                                 "clickable":  false,
+                                                                                                                                                                                                 "enabled":  false,
+                                                                                                                                                                                                 "visibleToUser":  false,
+                                                                                                                                                                                                 "bounds":  {
+                                                                                                                                                                                                                "left":  0,
+                                                                                                                                                                                                                "right":  1280,
+                                                                                                                                                                                                                "bottom":  2447,
+                                                                                                                                                                                                                "top":  0
+                                                                                                                                                                                                            },
+                                                                                                                                                                                                 "depth":  9,
+                                                                                                                                                                                                 "indexInParent":  0,
+                                                                                                                                                                                                 "packageName":  "com.xunlei.downloadprovider",
+                                                                                                                                                                                                 "children":  [
+                                                                                                                                                                                                                  {
+                                                                                                                                                                                                                      "viewId":  "com.xunlei.downloadprovider:id/native_container",
+                                                                                                                                                                                                                      "className":  "android.widget.FrameLayout",
+                                                                                                                                                                                                                      "text":  null,
+                                                                                                                                                                                                                      "contentDescription":  null,
+                                                                                                                                                                                                                      "clickable":  false,
+                                                                                                                                                                                                                      "enabled":  false,
+                                                                                                                                                                                                                      "visibleToUser":  false,
+                                                                                                                                                                                                                      "bounds":  {
+                                                                                                                                                                                                                                     "left":  0,
+                                                                                                                                                                                                                                     "right":  1280,
+                                                                                                                                                                                                                                     "bottom":  2447,
+                                                                                                                                                                                                                                     "top":  0
+                                                                                                                                                                                                                                 },
+                                                                                                                                                                                                                      "depth":  10,
+                                                                                                                                                                                                                      "indexInParent":  0,
+                                                                                                                                                                                                                      "packageName":  "com.xunlei.downloadprovider",
+                                                                                                                                                                                                                      "children":  [
+                                                                                                                                                                                                                                       {
+                                                                                                                                                                                                                                           "viewId":  null,
+                                                                                                                                                                                                                                           "className":  "android.widget.FrameLayout",
+                                                                                                                                                                                                                                           "text":  null,
+                                                                                                                                                                                                                                           "contentDescription":  null,
+                                                                                                                                                                                                                                           "clickable":  false,
+                                                                                                                                                                                                                                           "enabled":  false,
+                                                                                                                                                                                                                                           "visibleToUser":  false,
+                                                                                                                                                                                                                                           "bounds":  {
+                                                                                                                                                                                                                                                          "left":  0,
+                                                                                                                                                                                                                                                          "right":  1280,
+                                                                                                                                                                                                                                                          "bottom":  2447,
+                                                                                                                                                                                                                                                          "top":  0
+                                                                                                                                                                                                                                                      },
+                                                                                                                                                                                                                                           "depth":  11,
+                                                                                                                                                                                                                                           "indexInParent":  0,
+                                                                                                                                                                                                                                           "packageName":  "com.xunlei.downloadprovider",
+                                                                                                                                                                                                                                           "children":  [
+                                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                                "viewId":  "com.xunlei.downloadprovider:id/contentView",
+                                                                                                                                                                                                                                                                "className":  "android.widget.FrameLayout",
+                                                                                                                                                                                                                                                                "text":  null,
+                                                                                                                                                                                                                                                                "contentDescription":  null,
+                                                                                                                                                                                                                                                                "clickable":  false,
+                                                                                                                                                                                                                                                                "enabled":  false,
+                                                                                                                                                                                                                                                                "visibleToUser":  false,
+                                                                                                                                                                                                                                                                "bounds":  {
+                                                                                                                                                                                                                                                                               "left":  0,
+                                                                                                                                                                                                                                                                               "right":  1280,
+                                                                                                                                                                                                                                                                               "bottom":  2447,
+                                                                                                                                                                                                                                                                               "top":  0
+                                                                                                                                                                                                                                                                           },
+                                                                                                                                                                                                                                                                "depth":  12,
+                                                                                                                                                                                                                                                                "indexInParent":  0,
+                                                                                                                                                                                                                                                                "packageName":  "com.xunlei.downloadprovider",
+                                                                                                                                                                                                                                                                "children":  [
+                                                                                                                                                                                                                                                                                 {
+                                                                                                                                                                                                                                                                                     "viewId":  null,
+                                                                                                                                                                                                                                                                                     "className":  "android.view.View",
+                                                                                                                                                                                                                                                                                     "text":  null,
+                                                                                                                                                                                                                                                                                     "contentDescription":  null,
+                                                                                                                                                                                                                                                                                     "clickable":  false,
+                                                                                                                                                                                                                                                                                     "enabled":  false,
+                                                                                                                                                                                                                                                                                     "visibleToUser":  false,
+                                                                                                                                                                                                                                                                                     "bounds":  {
+                                                                                                                                                                                                                                                                                                    "left":  0,
+                                                                                                                                                                                                                                                                                                    "right":  1280,
+                                                                                                                                                                                                                                                                                                    "bottom":  2447,
+                                                                                                                                                                                                                                                                                                    "top":  0
+                                                                                                                                                                                                                                                                                                },
+                                                                                                                                                                                                                                                                                     "depth":  13,
+                                                                                                                                                                                                                                                                                     "indexInParent":  0,
+                                                                                                                                                                                                                                                                                     "packageName":  "com.xunlei.downloadprovider",
+                                                                                                                                                                                                                                                                                     "children":  [
+
+                                                                                                                                                                                                                                                                                                  ]
+                                                                                                                                                                                                                                                                                 }
+                                                                                                                                                                                                                                                                             ]
+                                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                                "viewId":  "com.xunlei.downloadprovider:id/splashDecorateView",
+                                                                                                                                                                                                                                                                "className":  "android.view.View",
+                                                                                                                                                                                                                                                                "text":  null,
+                                                                                                                                                                                                                                                                "contentDescription":  null,
+                                                                                                                                                                                                                                                                "clickable":  false,
+                                                                                                                                                                                                                                                                "enabled":  false,
+                                                                                                                                                                                                                                                                "visibleToUser":  false,
+                                                                                                                                                                                                                                                                "bounds":  {
+                                                                                                                                                                                                                                                                               "left":  0,
+                                                                                                                                                                                                                                                                               "right":  1280,
+                                                                                                                                                                                                                                                                               "bottom":  2447,
+                                                                                                                                                                                                                                                                               "top":  0
+                                                                                                                                                                                                                                                                           },
+                                                                                                                                                                                                                                                                "depth":  12,
+                                                                                                                                                                                                                                                                "indexInParent":  1,
+                                                                                                                                                                                                                                                                "packageName":  "com.xunlei.downloadprovider",
+                                                                                                                                                                                                                                                                "children":  [
+
+                                                                                                                                                                                                                                                                             ]
+                                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                                "viewId":  "com.xunlei.downloadprovider:id/controllerView",
+                                                                                                                                                                                                                                                                "className":  "android.widget.FrameLayout",
+                                                                                                                                                                                                                                                                "text":  null,
+                                                                                                                                                                                                                                                                "contentDescription":  null,
+                                                                                                                                                                                                                                                                "clickable":  false,
+                                                                                                                                                                                                                                                                "enabled":  false,
+                                                                                                                                                                                                                                                                "visibleToUser":  false,
+                                                                                                                                                                                                                                                                "bounds":  {
+                                                                                                                                                                                                                                                                               "left":  0,
+                                                                                                                                                                                                                                                                               "right":  1280,
+                                                                                                                                                                                                                                                                               "bottom":  2447,
+                                                                                                                                                                                                                                                                               "top":  0
+                                                                                                                                                                                                                                                                           },
+                                                                                                                                                                                                                                                                "depth":  12,
+                                                                                                                                                                                                                                                                "indexInParent":  2,
+                                                                                                                                                                                                                                                                "packageName":  "com.xunlei.downloadprovider",
+                                                                                                                                                                                                                                                                "children":  [
+                                                                                                                                                                                                                                                                                 {
+                                                                                                                                                                                                                                                                                     "viewId":  null,
+                                                                                                                                                                                                                                                                                     "className":  "android.view.ViewGroup",
+                                                                                                                                                                                                                                                                                     "text":  null,
+                                                                                                                                                                                                                                                                                     "contentDescription":  null,
+                                                                                                                                                                                                                                                                                     "clickable":  false,
+                                                                                                                                                                                                                                                                                     "enabled":  false,
+                                                                                                                                                                                                                                                                                     "visibleToUser":  false,
+                                                                                                                                                                                                                                                                                     "bounds":  {
+                                                                                                                                                                                                                                                                                                    "left":  0,
+                                                                                                                                                                                                                                                                                                    "right":  1280,
+                                                                                                                                                                                                                                                                                                    "bottom":  2447,
+                                                                                                                                                                                                                                                                                                    "top":  0
+                                                                                                                                                                                                                                                                                                },
+                                                                                                                                                                                                                                                                                     "depth":  13,
+                                                                                                                                                                                                                                                                                     "indexInParent":  0,
+                                                                                                                                                                                                                                                                                     "packageName":  "com.xunlei.downloadprovider",
+                                                                                                                                                                                                                                                                                     "children":  [
+                                                                                                                                                                                                                                                                                                      {
+                                                                                                                                                                                                                                                                                                          "viewId":  "com.xunlei.downloadprovider:id/mask",
+                                                                                                                                                                                                                                                                                                          "className":  "android.view.View",
+                                                                                                                                                                                                                                                                                                          "text":  null,
+                                                                                                                                                                                                                                                                                                          "contentDescription":  null,
+                                                                                                                                                                                                                                                                                                          "clickable":  false,
+                                                                                                                                                                                                                                                                                                          "enabled":  false,
+                                                                                                                                                                                                                                                                                                          "visibleToUser":  false,
+                                                                                                                                                                                                                                                                                                          "bounds":  {
+                                                                                                                                                                                                                                                                                                                         "left":  0,
+                                                                                                                                                                                                                                                                                                                         "right":  1280,
+                                                                                                                                                                                                                                                                                                                         "bottom":  2447,
+                                                                                                                                                                                                                                                                                                                         "top":  1517
+                                                                                                                                                                                                                                                                                                                     },
+                                                                                                                                                                                                                                                                                                          "depth":  14,
+                                                                                                                                                                                                                                                                                                          "indexInParent":  0,
+                                                                                                                                                                                                                                                                                                          "packageName":  "com.xunlei.downloadprovider",
+                                                                                                                                                                                                                                                                                                          "children":  [
+
+                                                                                                                                                                                                                                                                                                                       ]
+                                                                                                                                                                                                                                                                                                      },
+                                                                                                                                                                                                                                                                                                      {
+                                                                                                                                                                                                                                                                                                          "viewId":  "com.xunlei.downloadprovider:id/shakeIcon",
+                                                                                                                                                                                                                                                                                                          "className":  "android.widget.ImageView",
+                                                                                                                                                                                                                                                                                                          "text":  null,
+                                                                                                                                                                                                                                                                                                          "contentDescription":  null,
+                                                                                                                                                                                                                                                                                                          "clickable":  false,
+                                                                                                                                                                                                                                                                                                          "enabled":  false,
+                                                                                                                                                                                                                                                                                                          "visibleToUser":  false,
+                                                                                                                                                                                                                                                                                                          "bounds":  {
+                                                                                                                                                                                                                                                                                                                         "left":  289,
+                                                                                                                                                                                                                                                                                                                         "right":  432,
+                                                                                                                                                                                                                                                                                                                         "bottom":  2132,
+                                                                                                                                                                                                                                                                                                                         "top":  1989
+                                                                                                                                                                                                                                                                                                                     },
+                                                                                                                                                                                                                                                                                                          "depth":  14,
+                                                                                                                                                                                                                                                                                                          "indexInParent":  1,
+                                                                                                                                                                                                                                                                                                          "packageName":  "com.xunlei.downloadprovider",
+                                                                                                                                                                                                                                                                                                          "children":  [
+
+                                                                                                                                                                                                                                                                                                                       ]
+                                                                                                                                                                                                                                                                                                      },
+                                                                                                                                                                                                                                                                                                      {
+                                                                                                                                                                                                                                                                                                          "viewId":  "com.xunlei.downloadprovider:id/shakeText",
+                                                                                                                                                                                                                                                                                                          "className":  "android.widget.TextView",
+                                                                                                                                                                                                                                                                                                          "text":  "摇动手机了解更多内容",
+                                                                                                                                                                                                                                                                                                          "contentDescription":  null,
+                                                                                                                                                                                                                                                                                                          "clickable":  false,
+                                                                                                                                                                                                                                                                                                          "enabled":  false,
+                                                                                                                                                                                                                                                                                                          "visibleToUser":  false,
+                                                                                                                                                                                                                                                                                                          "bounds":  {
+                                                                                                                                                                                                                                                                                                                         "left":  471,
+                                                                                                                                                                                                                                                                                                                         "right":  991,
+                                                                                                                                                                                                                                                                                                                         "bottom":  2096,
+                                                                                                                                                                                                                                                                                                                         "top":  2026
+                                                                                                                                                                                                                                                                                                                     },
+                                                                                                                                                                                                                                                                                                          "depth":  14,
+                                                                                                                                                                                                                                                                                                          "indexInParent":  2,
+                                                                                                                                                                                                                                                                                                          "packageName":  "com.xunlei.downloadprovider",
+                                                                                                                                                                                                                                                                                                          "children":  [
+
+                                                                                                                                                                                                                                                                                                                       ]
+                                                                                                                                                                                                                                                                                                      },
+                                                                                                                                                                                                                                                                                                      {
+                                                                                                                                                                                                                                                                                                          "viewId":  "com.xunlei.downloadprovider:id/button",
+                                                                                                                                                                                                                                                                                                          "className":  "android.widget.TextView",
+                                                                                                                                                                                                                                                                                                          "text":  "点击试试",
+                                                                                                                                                                                                                                                                                                          "contentDescription":  null,
+                                                                                                                                                                                                                                                                                                          "clickable":  true,
+                                                                                                                                                                                                                                                                                                          "enabled":  false,
+                                                                                                                                                                                                                                                                                                          "visibleToUser":  false,
+                                                                                                                                                                                                                                                                                                          "bounds":  {
+                                                                                                                                                                                                                                                                                                                         "left":  348,
+                                                                                                                                                                                                                                                                                                                         "right":  933,
+                                                                                                                                                                                                                                                                                                                         "bottom":  2369,
+                                                                                                                                                                                                                                                                                                                         "top":  2197
+                                                                                                                                                                                                                                                                                                                     },
+                                                                                                                                                                                                                                                                                                          "depth":  14,
+                                                                                                                                                                                                                                                                                                          "indexInParent":  3,
+                                                                                                                                                                                                                                                                                                          "packageName":  "com.xunlei.downloadprovider",
+                                                                                                                                                                                                                                                                                                          "children":  [
+
+                                                                                                                                                                                                                                                                                                                       ]
+                                                                                                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                                                                                  ]
+                                                                                                                                                                                                                                                                                 }
+                                                                                                                                                                                                                                                                             ]
+                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                        ]
+                                                                                                                                                                                                                                       }
+                                                                                                                                                                                                                                   ]
+                                                                                                                                                                                                                  }
+                                                                                                                                                                                                              ]
+                                                                                                                                                                                             }
+                                                                                                                                                                                         ]
+                                                                                                                                                                        }
+                                                                                                                                                                    ]
+                                                                                                                                                   }
+                                                                                                                                               ]
+                                                                                                                              },
+                                                                                                                              {
+                                                                                                                                  "viewId":  "com.xunlei.downloadprovider:id/init_time",
+                                                                                                                                  "className":  "android.widget.TextView",
+                                                                                                                                  "text":  null,
+                                                                                                                                  "contentDescription":  null,
+                                                                                                                                  "clickable":  false,
+                                                                                                                                  "enabled":  false,
+                                                                                                                                  "visibleToUser":  false,
+                                                                                                                                  "bounds":  {
+                                                                                                                                                 "left":  59,
+                                                                                                                                                 "right":  59,
+                                                                                                                                                 "bottom":  176,
+                                                                                                                                                 "top":  124
+                                                                                                                                             },
+                                                                                                                                  "depth":  6,
+                                                                                                                                  "indexInParent":  2,
+                                                                                                                                  "packageName":  "com.xunlei.downloadprovider",
+                                                                                                                                  "children":  [
+
+                                                                                                                                               ]
+                                                                                                                              },
+                                                                                                                              {
+                                                                                                                                  "viewId":  "com.xunlei.downloadprovider:id/splash_member_ad_hide_view",
+                                                                                                                                  "className":  "android.widget.LinearLayout",
+                                                                                                                                  "text":  null,
+                                                                                                                                  "contentDescription":  null,
+                                                                                                                                  "clickable":  true,
+                                                                                                                                  "enabled":  false,
+                                                                                                                                  "visibleToUser":  false,
+                                                                                                                                  "bounds":  {
+                                                                                                                                                 "left":  470,
+                                                                                                                                                 "right":  811,
+                                                                                                                                                 "bottom":  192,
+                                                                                                                                                 "top":  114
+                                                                                                                                             },
+                                                                                                                                  "depth":  6,
+                                                                                                                                  "indexInParent":  3,
+                                                                                                                                  "packageName":  "com.xunlei.downloadprovider",
+                                                                                                                                  "children":  [
+                                                                                                                                                   {
+                                                                                                                                                       "viewId":  null,
+                                                                                                                                                       "className":  "android.widget.ImageView",
+                                                                                                                                                       "text":  null,
+                                                                                                                                                       "contentDescription":  null,
+                                                                                                                                                       "clickable":  false,
+                                                                                                                                                       "enabled":  false,
+                                                                                                                                                       "visibleToUser":  false,
+                                                                                                                                                       "bounds":  {
+                                                                                                                                                                      "left":  493,
+                                                                                                                                                                      "right":  545,
+                                                                                                                                                                      "bottom":  179,
+                                                                                                                                                                      "top":  127
+                                                                                                                                                                  },
+                                                                                                                                                       "depth":  7,
+                                                                                                                                                       "indexInParent":  0,
+                                                                                                                                                       "packageName":  "com.xunlei.downloadprovider",
+                                                                                                                                                       "children":  [
+
+                                                                                                                                                                    ]
+                                                                                                                                                   },
+                                                                                                                                                   {
+                                                                                                                                                       "viewId":  null,
+                                                                                                                                                       "className":  "android.widget.TextView",
+                                                                                                                                                       "text":  "会员去广告 \u003e",
+                                                                                                                                                       "contentDescription":  null,
+                                                                                                                                                       "clickable":  false,
+                                                                                                                                                       "enabled":  false,
+                                                                                                                                                       "visibleToUser":  false,
+                                                                                                                                                       "bounds":  {
+                                                                                                                                                                      "left":  558,
+                                                                                                                                                                      "right":  788,
+                                                                                                                                                                      "bottom":  179,
+                                                                                                                                                                      "top":  127
+                                                                                                                                                                  },
+                                                                                                                                                       "depth":  7,
+                                                                                                                                                       "indexInParent":  1,
+                                                                                                                                                       "packageName":  "com.xunlei.downloadprovider",
+                                                                                                                                                       "children":  [
+
+                                                                                                                                                                    ]
+                                                                                                                                                   }
+                                                                                                                                               ]
+                                                                                                                              },
+                                                                                                                              {
+                                                                                                                                  "viewId":  null,
+                                                                                                                                  "className":  "android.view.ViewGroup",
+                                                                                                                                  "text":  null,
+                                                                                                                                  "contentDescription":  null,
+                                                                                                                                  "clickable":  false,
+                                                                                                                                  "enabled":  false,
+                                                                                                                                  "visibleToUser":  false,
+                                                                                                                                  "bounds":  {
+                                                                                                                                                 "left":  0,
+                                                                                                                                                 "right":  1280,
+                                                                                                                                                 "bottom":  2772,
+                                                                                                                                                 "top":  2447
+                                                                                                                                             },
+                                                                                                                                  "depth":  6,
+                                                                                                                                  "indexInParent":  4,
+                                                                                                                                  "packageName":  "com.xunlei.downloadprovider",
+                                                                                                                                  "children":  [
+                                                                                                                                                   {
+                                                                                                                                                       "viewId":  "com.xunlei.downloadprovider:id/bg_splash_bottom",
+                                                                                                                                                       "className":  "android.widget.ImageView",
+                                                                                                                                                       "text":  null,
+                                                                                                                                                       "contentDescription":  null,
+                                                                                                                                                       "clickable":  false,
+                                                                                                                                                       "enabled":  false,
+                                                                                                                                                       "visibleToUser":  false,
+                                                                                                                                                       "bounds":  {
+                                                                                                                                                                      "left":  0,
+                                                                                                                                                                      "right":  1280,
+                                                                                                                                                                      "bottom":  2772,
+                                                                                                                                                                      "top":  2447
+                                                                                                                                                                  },
+                                                                                                                                                       "depth":  7,
+                                                                                                                                                       "indexInParent":  0,
+                                                                                                                                                       "packageName":  "com.xunlei.downloadprovider",
+                                                                                                                                                       "children":  [
+
+                                                                                                                                                                    ]
+                                                                                                                                                   },
+                                                                                                                                                   {
+                                                                                                                                                       "viewId":  "com.xunlei.downloadprovider:id/iv_splash_bottom_logo",
+                                                                                                                                                       "className":  "android.widget.ImageView",
+                                                                                                                                                       "text":  null,
+                                                                                                                                                       "contentDescription":  "图片描述",
+                                                                                                                                                       "clickable":  false,
+                                                                                                                                                       "enabled":  false,
+                                                                                                                                                       "visibleToUser":  false,
+                                                                                                                                                       "bounds":  {
+                                                                                                                                                                      "left":  496,
+                                                                                                                                                                      "right":  785,
+                                                                                                                                                                      "bottom":  2659,
+                                                                                                                                                                      "top":  2561
+                                                                                                                                                                  },
+                                                                                                                                                       "depth":  7,
+                                                                                                                                                       "indexInParent":  1,
+                                                                                                                                                       "packageName":  "com.xunlei.downloadprovider",
+                                                                                                                                                       "children":  [
+
+                                                                                                                                                                    ]
+                                                                                                                                                   }
+                                                                                                                                               ]
+                                                                                                                              }
+                                                                                                                          ]
+                                                                                                         }
+                                                                                                     ]
+                                                                                    }
+                                                                                ]
+                                                               }
+                                                           ]
+                                          }
+                                      ]
+                     }
+                 ]
+}

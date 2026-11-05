@@ -1,0 +1,347 @@
+{
+    "viewId":  null,
+    "className":  "android.widget.FrameLayout",
+    "text":  null,
+    "contentDescription":  null,
+    "clickable":  false,
+    "enabled":  false,
+    "visibleToUser":  false,
+    "bounds":  {
+                   "left":  0,
+                   "right":  1280,
+                   "bottom":  2772,
+                   "top":  0
+               },
+    "depth":  0,
+    "indexInParent":  0,
+    "packageName":  "com.tencent.mtt",
+    "children":  [
+                     {
+                         "viewId":  null,
+                         "className":  "android.widget.LinearLayout",
+                         "text":  null,
+                         "contentDescription":  null,
+                         "clickable":  false,
+                         "enabled":  false,
+                         "visibleToUser":  false,
+                         "bounds":  {
+                                        "left":  0,
+                                        "right":  1280,
+                                        "bottom":  2720,
+                                        "top":  0
+                                    },
+                         "depth":  1,
+                         "indexInParent":  0,
+                         "packageName":  "com.tencent.mtt",
+                         "children":  [
+                                          {
+                                              "viewId":  "android:id/content",
+                                              "className":  "android.widget.FrameLayout",
+                                              "text":  null,
+                                              "contentDescription":  null,
+                                              "clickable":  false,
+                                              "enabled":  false,
+                                              "visibleToUser":  false,
+                                              "bounds":  {
+                                                             "left":  0,
+                                                             "right":  1280,
+                                                             "bottom":  2720,
+                                                             "top":  0
+                                                         },
+                                              "depth":  2,
+                                              "indexInParent":  0,
+                                              "packageName":  "com.tencent.mtt",
+                                              "children":  [
+                                                               {
+                                                                   "viewId":  null,
+                                                                   "className":  "android.widget.FrameLayout",
+                                                                   "text":  null,
+                                                                   "contentDescription":  null,
+                                                                   "clickable":  false,
+                                                                   "enabled":  false,
+                                                                   "visibleToUser":  false,
+                                                                   "bounds":  {
+                                                                                  "left":  0,
+                                                                                  "right":  1280,
+                                                                                  "bottom":  2720,
+                                                                                  "top":  0
+                                                                              },
+                                                                   "depth":  3,
+                                                                   "indexInParent":  0,
+                                                                   "packageName":  "com.tencent.mtt",
+                                                                   "children":  [
+                                                                                    {
+                                                                                        "viewId":  null,
+                                                                                        "className":  "android.widget.FrameLayout",
+                                                                                        "text":  null,
+                                                                                        "contentDescription":  null,
+                                                                                        "clickable":  false,
+                                                                                        "enabled":  false,
+                                                                                        "visibleToUser":  false,
+                                                                                        "bounds":  {
+                                                                                                       "left":  0,
+                                                                                                       "right":  1280,
+                                                                                                       "bottom":  2720,
+                                                                                                       "top":  0
+                                                                                                   },
+                                                                                        "depth":  4,
+                                                                                        "indexInParent":  0,
+                                                                                        "packageName":  "com.tencent.mtt",
+                                                                                        "children":  [
+                                                                                                         {
+                                                                                                             "viewId":  null,
+                                                                                                             "className":  "android.widget.FrameLayout",
+                                                                                                             "text":  null,
+                                                                                                             "contentDescription":  null,
+                                                                                                             "clickable":  false,
+                                                                                                             "enabled":  false,
+                                                                                                             "visibleToUser":  false,
+                                                                                                             "bounds":  {
+                                                                                                                            "left":  0,
+                                                                                                                            "right":  1280,
+                                                                                                                            "bottom":  2720,
+                                                                                                                            "top":  0
+                                                                                                                        },
+                                                                                                             "depth":  5,
+                                                                                                             "indexInParent":  0,
+                                                                                                             "packageName":  "com.tencent.mtt",
+                                                                                                             "children":  [
+                                                                                                                              {
+                                                                                                                                  "viewId":  null,
+                                                                                                                                  "className":  "android.widget.ImageView",
+                                                                                                                                  "text":  null,
+                                                                                                                                  "contentDescription":  null,
+                                                                                                                                  "clickable":  true,
+                                                                                                                                  "enabled":  false,
+                                                                                                                                  "visibleToUser":  false,
+                                                                                                                                  "bounds":  {
+                                                                                                                                                 "left":  0,
+                                                                                                                                                 "right":  1280,
+                                                                                                                                                 "bottom":  2720,
+                                                                                                                                                 "top":  0
+                                                                                                                                             },
+                                                                                                                                  "depth":  6,
+                                                                                                                                  "indexInParent":  0,
+                                                                                                                                  "packageName":  "com.tencent.mtt",
+                                                                                                                                  "children":  [
+
+                                                                                                                                               ]
+                                                                                                                              },
+                                                                                                                              {
+                                                                                                                                  "viewId":  null,
+                                                                                                                                  "className":  "android.widget.FrameLayout",
+                                                                                                                                  "text":  null,
+                                                                                                                                  "contentDescription":  null,
+                                                                                                                                  "clickable":  false,
+                                                                                                                                  "enabled":  false,
+                                                                                                                                  "visibleToUser":  false,
+                                                                                                                                  "bounds":  {
+                                                                                                                                                 "left":  0,
+                                                                                                                                                 "right":  1280,
+                                                                                                                                                 "bottom":  2720,
+                                                                                                                                                 "top":  0
+                                                                                                                                             },
+                                                                                                                                  "depth":  6,
+                                                                                                                                  "indexInParent":  1,
+                                                                                                                                  "packageName":  "com.tencent.mtt",
+                                                                                                                                  "children":  [
+                                                                                                                                                   {
+                                                                                                                                                       "viewId":  null,
+                                                                                                                                                       "className":  "android.view.SurfaceView",
+                                                                                                                                                       "text":  null,
+                                                                                                                                                       "contentDescription":  null,
+                                                                                                                                                       "clickable":  false,
+                                                                                                                                                       "enabled":  false,
+                                                                                                                                                       "visibleToUser":  false,
+                                                                                                                                                       "bounds":  {
+                                                                                                                                                                      "left":  0,
+                                                                                                                                                                      "right":  1280,
+                                                                                                                                                                      "bottom":  2720,
+                                                                                                                                                                      "top":  0
+                                                                                                                                                                  },
+                                                                                                                                                       "depth":  7,
+                                                                                                                                                       "indexInParent":  0,
+                                                                                                                                                       "packageName":  "com.tencent.mtt",
+                                                                                                                                                       "children":  [
+
+                                                                                                                                                                    ]
+                                                                                                                                                   },
+                                                                                                                                                   {
+                                                                                                                                                       "viewId":  null,
+                                                                                                                                                       "className":  "android.view.View",
+                                                                                                                                                       "text":  null,
+                                                                                                                                                       "contentDescription":  null,
+                                                                                                                                                       "clickable":  true,
+                                                                                                                                                       "enabled":  false,
+                                                                                                                                                       "visibleToUser":  false,
+                                                                                                                                                       "bounds":  {
+                                                                                                                                                                      "left":  0,
+                                                                                                                                                                      "right":  1280,
+                                                                                                                                                                      "bottom":  2720,
+                                                                                                                                                                      "top":  2720
+                                                                                                                                                                  },
+                                                                                                                                                       "depth":  7,
+                                                                                                                                                       "indexInParent":  1,
+                                                                                                                                                       "packageName":  "com.tencent.mtt",
+                                                                                                                                                       "children":  [
+
+                                                                                                                                                                    ]
+                                                                                                                                                   }
+                                                                                                                                               ]
+                                                                                                                              },
+                                                                                                                              {
+                                                                                                                                  "viewId":  null,
+                                                                                                                                  "className":  "android.widget.FrameLayout",
+                                                                                                                                  "text":  null,
+                                                                                                                                  "contentDescription":  null,
+                                                                                                                                  "clickable":  true,
+                                                                                                                                  "enabled":  false,
+                                                                                                                                  "visibleToUser":  false,
+                                                                                                                                  "bounds":  {
+                                                                                                                                                 "left":  26,
+                                                                                                                                                 "right":  302,
+                                                                                                                                                 "bottom":  260,
+                                                                                                                                                 "top":  162
+                                                                                                                                             },
+                                                                                                                                  "depth":  6,
+                                                                                                                                  "indexInParent":  2,
+                                                                                                                                  "packageName":  "com.tencent.mtt",
+                                                                                                                                  "children":  [
+                                                                                                                                                   {
+                                                                                                                                                       "viewId":  null,
+                                                                                                                                                       "className":  "android.widget.ImageView",
+                                                                                                                                                       "text":  null,
+                                                                                                                                                       "contentDescription":  null,
+                                                                                                                                                       "clickable":  false,
+                                                                                                                                                       "enabled":  false,
+                                                                                                                                                       "visibleToUser":  false,
+                                                                                                                                                       "bounds":  {
+                                                                                                                                                                      "left":  26,
+                                                                                                                                                                      "right":  302,
+                                                                                                                                                                      "bottom":  260,
+                                                                                                                                                                      "top":  162
+                                                                                                                                                                  },
+                                                                                                                                                       "depth":  7,
+                                                                                                                                                       "indexInParent":  0,
+                                                                                                                                                       "packageName":  "com.tencent.mtt",
+                                                                                                                                                       "children":  [
+
+                                                                                                                                                                    ]
+                                                                                                                                                   }
+                                                                                                                                               ]
+                                                                                                                              },
+                                                                                                                              {
+                                                                                                                                  "viewId":  null,
+                                                                                                                                  "className":  "android.widget.LinearLayout",
+                                                                                                                                  "text":  null,
+                                                                                                                                  "contentDescription":  null,
+                                                                                                                                  "clickable":  false,
+                                                                                                                                  "enabled":  false,
+                                                                                                                                  "visibleToUser":  false,
+                                                                                                                                  "bounds":  {
+                                                                                                                                                 "left":  856,
+                                                                                                                                                 "right":  1012,
+                                                                                                                                                 "bottom":  250,
+                                                                                                                                                 "top":  172
+                                                                                                                                             },
+                                                                                                                                  "depth":  6,
+                                                                                                                                  "indexInParent":  3,
+                                                                                                                                  "packageName":  "com.tencent.mtt",
+                                                                                                                                  "children":  [
+                                                                                                                                                   {
+                                                                                                                                                       "viewId":  null,
+                                                                                                                                                       "className":  "android.widget.TextView",
+                                                                                                                                                       "text":  "互动广告",
+                                                                                                                                                       "contentDescription":  null,
+                                                                                                                                                       "clickable":  false,
+                                                                                                                                                       "enabled":  false,
+                                                                                                                                                       "visibleToUser":  false,
+                                                                                                                                                       "bounds":  {
+                                                                                                                                                                      "left":  864,
+                                                                                                                                                                      "right":  1004,
+                                                                                                                                                                      "bottom":  235,
+                                                                                                                                                                      "top":  186
+                                                                                                                                                                  },
+                                                                                                                                                       "depth":  7,
+                                                                                                                                                       "indexInParent":  0,
+                                                                                                                                                       "packageName":  "com.tencent.mtt",
+                                                                                                                                                       "children":  [
+
+                                                                                                                                                                    ]
+                                                                                                                                                   }
+                                                                                                                                               ]
+                                                                                                                              },
+                                                                                                                              {
+                                                                                                                                  "viewId":  null,
+                                                                                                                                  "className":  "android.widget.LinearLayout",
+                                                                                                                                  "text":  null,
+                                                                                                                                  "contentDescription":  null,
+                                                                                                                                  "clickable":  true,
+                                                                                                                                  "enabled":  false,
+                                                                                                                                  "visibleToUser":  false,
+                                                                                                                                  "bounds":  {
+                                                                                                                                                 "left":  1045,
+                                                                                                                                                 "right":  1234,
+                                                                                                                                                 "bottom":  253,
+                                                                                                                                                 "top":  172
+                                                                                                                                             },
+                                                                                                                                  "depth":  6,
+                                                                                                                                  "indexInParent":  4,
+                                                                                                                                  "packageName":  "com.tencent.mtt",
+                                                                                                                                  "children":  [
+                                                                                                                                                   {
+                                                                                                                                                       "viewId":  null,
+                                                                                                                                                       "className":  "android.widget.TextView",
+                                                                                                                                                       "text":  "跳过",
+                                                                                                                                                       "contentDescription":  null,
+                                                                                                                                                       "clickable":  false,
+                                                                                                                                                       "enabled":  false,
+                                                                                                                                                       "visibleToUser":  false,
+                                                                                                                                                       "bounds":  {
+                                                                                                                                                                      "left":  1081,
+                                                                                                                                                                      "right":  1175,
+                                                                                                                                                                      "bottom":  238,
+                                                                                                                                                                      "top":  186
+                                                                                                                                                                  },
+                                                                                                                                                       "depth":  7,
+                                                                                                                                                       "indexInParent":  0,
+                                                                                                                                                       "packageName":  "com.tencent.mtt",
+                                                                                                                                                       "children":  [
+
+                                                                                                                                                                    ]
+                                                                                                                                                   },
+                                                                                                                                                   {
+                                                                                                                                                       "viewId":  null,
+                                                                                                                                                       "className":  "android.widget.TextView",
+                                                                                                                                                       "text":  "4",
+                                                                                                                                                       "contentDescription":  null,
+                                                                                                                                                       "clickable":  false,
+                                                                                                                                                       "enabled":  false,
+                                                                                                                                                       "visibleToUser":  false,
+                                                                                                                                                       "bounds":  {
+                                                                                                                                                                      "left":  1175,
+                                                                                                                                                                      "right":  1198,
+                                                                                                                                                                      "bottom":  238,
+                                                                                                                                                                      "top":  186
+                                                                                                                                                                  },
+                                                                                                                                                       "depth":  7,
+                                                                                                                                                       "indexInParent":  1,
+                                                                                                                                                       "packageName":  "com.tencent.mtt",
+                                                                                                                                                       "children":  [
+
+                                                                                                                                                                    ]
+                                                                                                                                                   }
+                                                                                                                                               ]
+                                                                                                                              }
+                                                                                                                          ]
+                                                                                                         }
+                                                                                                     ]
+                                                                                    }
+                                                                                ]
+                                                               }
+                                                           ]
+                                          }
+                                      ]
+                     }
+                 ]
+}

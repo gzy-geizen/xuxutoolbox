@@ -1,0 +1,77 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "id": "sdk.csj.splash.skip",
+      "priority": 100,
+      "enabled": true,
+      "window": { "fullscreen": true, "launchAgeMsMax": 8000, "excludeIfImeVisible": true },
+      "match": {
+        "any": [
+          { "viewIdRegex": "(?i)bytedance\\.sdk\\.openadsdk:id/(tt_splash_skip|tt_splash_ad_skip)", "clickable": true }
+        ]
+      },
+      "guard": {
+        "cooldownMs": 800,
+        "maxActionsPerWindow": 1,
+        "forbidTextRegex": "下载|安装|详情|查看|立即|领取|打开|允许|同意|确认|继续|授权|更新|升级|购买|支付|充值|开通|关注|订阅|签到|直播|购物车|优惠券|客服|评价|分享|邀请"
+      },
+      "action": { "type": "click", "fallback": "gesture-center" },
+      "evidence": "穿山甲（CSJ）开屏跳过按钮的常见 viewId"
+    },
+    {
+      "id": "sdk.generic.skip.id",
+      "priority": 90,
+      "enabled": true,
+      "window": { "fullscreen": true, "launchAgeMsMax": 8000, "excludeIfImeVisible": true },
+      "match": {
+        "any": [
+          { "viewIdRegex": "(?i)(splash_?skip|skip_?splash|ad_?skip|skip_?ad|skip_?(btn|button|view|tv|iv))", "clickable": true, "minAreaDp2": 16 }
+        ]
+      },
+      "guard": {
+        "cooldownMs": 800,
+        "maxActionsPerWindow": 1,
+        "forbidTextRegex": "下载|安装|详情|查看|立即|领取|打开|允许|同意|确认|继续|授权|更新|升级|购买|支付|充值|开通|关注|订阅|签到|直播|购物车|优惠券|客服|评价|分享|邀请"
+      },
+      "action": { "type": "click", "fallback": "gesture-center" },
+      "evidence": "各广告 SDK 跳过按钮的通用命名模式"
+    },
+    {
+      "id": "sdk.generic.close.id",
+      "priority": 80,
+      "enabled": true,
+      "window": { "fullscreen": true, "launchAgeMsMax": 8000, "excludeIfImeVisible": true },
+      "match": {
+        "any": [
+          { "viewIdRegex": "(?i)(splash_?close|close_?splash|ad_?close|close_?(btn|button|view|iv))", "clickable": true, "minAreaDp2": 16, "region": "top_right" }
+        ]
+      },
+      "guard": {
+        "cooldownMs": 800,
+        "maxActionsPerWindow": 1,
+        "forbidTextRegex": "下载|安装|详情|查看|立即|领取|打开|允许|同意|确认|继续|授权|更新|升级|购买|支付|充值|开通|关注|订阅|签到|直播|购物车|优惠券|客服|评价|分享|邀请"
+      },
+      "action": { "type": "click", "fallback": "gesture-center" },
+      "evidence": "只有关闭按钮、没有「跳过」文字的广告"
+    },
+    {
+      "id": "sdk.generic.close.text",
+      "priority": 60,
+      "enabled": true,
+      "window": { "fullscreen": true, "launchAgeMsMax": 8000, "excludeIfImeVisible": true },
+      "match": {
+        "any": [
+          { "textRegex": "^(关闭广告|关闭)(\\s*\\d+\\s*[sS]?)?$", "clickable": true, "minAreaDp2": 16 }
+        ]
+      },
+      "guard": {
+        "cooldownMs": 800,
+        "maxActionsPerWindow": 1,
+        "forbidTextRegex": "下载|安装|详情|查看|立即|领取|打开|允许|同意|确认|继续|授权|更新|升级|购买|支付|充值|开通|关注|订阅|签到|直播|购物车|优惠券|客服|评价|分享|邀请"
+      },
+      "action": { "type": "click", "fallback": "gesture-center" },
+      "evidence": "「关闭广告 3」这类带倒计时的关闭按钮"
+    }
+  ]
+}

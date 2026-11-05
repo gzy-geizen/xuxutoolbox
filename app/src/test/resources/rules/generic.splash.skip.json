@@ -1,0 +1,5 @@
+{
+  "packageName": "com.demo.app",
+  "bounds": {"left":0,"top":0,"right":1280,"bottom":2772},
+  "children": [ {"packageName":"com.demo.app","bounds":{"left":962,"top":104,"right":1228,"bottom":182},"text":"跳过 5","clickable":true} ]
+}

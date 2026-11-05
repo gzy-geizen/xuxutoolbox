@@ -1,0 +1,244 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "id": "generic.splash.skip",
+      "layer": "generic",
+      "priority": 10,
+      "enabled": true,
+      "window": {
+        "fullscreen": true,
+        "launchAgeMsMax": 8000,
+        "excludeIfImeVisible": true
+      },
+      "match": {
+        "any": [
+          {
+            "textRegex": "^(跳过|跳过广告|skip)(\\s*\\d+\\s*[sS]?)?$"
+          },
+          {
+            "textRegex": "^(跳过广告|跳过)[\\s\\S]{0,6}$"
+          },
+          {
+            "textContains": "跳过",
+            "clickable": true,
+            "region": "top_right",
+            "minAreaDp2": 16
+          }
+        ]
+      },
+      "guard": {
+        "cooldownMs": 800,
+        "maxActionsPerWindow": 1,
+        "forbidTextRegex": "下载|安装|详情|查看|立即|领取|打开|允许|同意|确认|继续|授权|更新|升级|购买|支付|充值|开通|关注|订阅|签到|直播|购物车|优惠券|客服|评价|分享|邀请"
+      },
+      "action": {
+        "type": "click",
+        "fallback": "gesture-center"
+      },
+      "evidence": "通用语义层：覆盖未抓过 XML 的 App"
+    },
+    {
+      "id": "generic.splash.close",
+      "layer": "generic",
+      "priority": 5,
+      "enabled": true,
+      "window": {
+        "fullscreen": true,
+        "launchAgeMsMax": 8000,
+        "excludeIfImeVisible": true
+      },
+      "match": {
+        "any": [
+          {
+            "textRegex": "^(×|✕|关闭)$",
+            "clickable": true,
+            "minAreaDp2": 24
+          }
+        ]
+      },
+      "guard": {
+        "cooldownMs": 800,
+        "maxActionsPerWindow": 1,
+        "forbidTextRegex": "下载|安装|详情|查看|立即|领取|打开|允许|同意|确认|继续|授权|更新|升级|购买|支付|充值|开通|关注|订阅|签到|直播|购物车|优惠券|客服|评价|分享|邀请"
+      },
+      "action": {
+        "type": "click",
+        "fallback": "gesture-center"
+      },
+      "evidence": "通用关闭按钮：× / ✕ / 关闭"
+    },
+    {
+      "id": "generic.splash.desc",
+      "layer": "generic",
+      "priority": 8,
+      "enabled": true,
+      "window": {
+        "fullscreen": true,
+        "launchAgeMsMax": 8000,
+        "excludeIfImeVisible": true
+      },
+      "match": {
+        "any": [
+          {
+            "descRegex": "跳过|skip",
+            "clickable": true,
+            "minAreaDp2": 16
+          }
+        ]
+      },
+      "guard": {
+        "cooldownMs": 800,
+        "maxActionsPerWindow": 1,
+        "forbidTextRegex": "下载|安装|详情|查看|立即|领取|打开|允许|同意|确认|继续|授权|更新|升级|购买|支付|充值|开通|关注|订阅|签到|直播|购物车|优惠券|客服|评价|分享|邀请"
+      },
+      "action": {
+        "type": "click",
+        "fallback": "gesture-center"
+      },
+      "evidence": "部分 SDK 跳过按钮没有文字，只有 contentDescription"
+    },
+    {
+      "id": "generic.splash.id",
+      "layer": "generic",
+      "priority": 7,
+      "enabled": true,
+      "window": {
+        "fullscreen": true,
+        "launchAgeMsMax": 8000,
+        "excludeIfImeVisible": true
+      },
+      "match": {
+        "any": [
+          {
+            "viewIdRegex": "(?i)(skip|splash_skip|skip_btn|close_btn|dismiss)",
+            "clickable": true,
+            "minAreaDp2": 16
+          }
+        ]
+      },
+      "guard": {
+        "cooldownMs": 800,
+        "maxActionsPerWindow": 1,
+        "forbidTextRegex": "下载|安装|详情|查看|立即|领取|打开|允许|同意|确认|继续|授权|更新|升级|购买|支付|充值|开通|关注|订阅|签到|直播|购物车|优惠券|客服|评价|分享|邀请"
+      },
+      "action": {
+        "type": "click",
+        "fallback": "gesture-center"
+      },
+      "evidence": "广告 SDK 常见跳过/关闭 viewId（穿山甲 tt_splash_skip_btn 等）"
+    },    {
+      "id": "app.tieba.splash",
+      "priority": 95,
+      "enabled": true,
+      "appScope": { "mode": "includeListed", "included": ["com.baidu.tieba"] },
+      "window": { "fullscreen": true, "launchAgeMsMax": 8000, "excludeIfImeVisible": true },
+      "match": {
+        "any": [
+          { "textRegex": "^跳过\\s*\\d{1,2}$", "clickable": true, "region": "top_right" }
+        ]
+      },
+      "guard": {
+        "cooldownMs": 800,
+        "maxActionsPerWindow": 1,
+        "forbidTextRegex": "下载|安装|详情|查看|立即|领取|打开|允许|同意|确认|继续|授权|更新|升级|购买|支付|充值|开通|关注|订阅|签到|直播|购物车|优惠券|客服|评价|分享|邀请"
+      },
+      "action": { "type": "click", "fallback": "gesture-center" },
+      "evidence": "真实捕获：百度贴吧开屏广告，跳过 04，bounds [997,65][1231,163]（capture-20261101-232318）"
+    },
+    {
+      "id": "app.mtt.splash",
+      "priority": 95,
+      "enabled": true,
+      "appScope": { "mode": "includeListed", "included": ["com.tencent.mtt"] },
+      "window": { "fullscreen": true, "launchAgeMsMax": 8000, "excludeIfImeVisible": true },
+      "match": {
+        "any": [
+          { "textRegex": "^跳过$", "region": "top_right", "minAreaDp2": 16 }
+        ]
+      },
+      "guard": {
+        "cooldownMs": 800,
+        "maxActionsPerWindow": 1,
+        "forbidTextRegex": "下载|安装|详情|查看|立即|领取|打开|允许|同意|确认|继续|授权|更新|升级|购买|支付|充值|开通|关注|订阅|签到|直播|购物车|优惠券|客服|评价|分享|邀请"
+      },
+      "action": { "type": "click", "fallback": "gesture-center" },
+      "evidence": "真实捕获：QQ浏览器开屏互动广告，跳过，bounds [1081,186][1175,238]（capture-20261101-232824）"
+    },
+    {
+      "id": "app.cmcc.splash",
+      "priority": 95,
+      "enabled": true,
+      "appScope": { "mode": "includeListed", "included": ["com.greenpoint.android.mc10086.activity"] },
+      "window": { "fullscreen": true, "launchAgeMsMax": 8000, "excludeIfImeVisible": true },
+      "match": {
+        "any": [
+          { "textContains": "跳过", "clickable": true, "region": "top_right", "minAreaDp2": 16 }
+        ]
+      },
+      "guard": {
+        "cooldownMs": 800,
+        "maxActionsPerWindow": 1,
+        "forbidTextRegex": "下载|安装|详情|查看|立即|领取|打开|允许|同意|确认|继续|授权|更新|升级|购买|支付|充值|开通|关注|订阅|签到|直播|购物车|优惠券|客服|评价|分享|邀请"
+      },
+      "action": { "type": "click", "fallback": "gesture-center" },
+      "evidence": "真实捕获：中国移动开屏，'3 跳过'，bounds [1012,122][1229,217]（capture-20261101-234742）"
+    },
+    {
+      "id": "app.cbn.splash",
+      "priority": 95,
+      "enabled": true,
+      "appScope": { "mode": "includeListed", "included": ["com.ai.obc.cbn.app"] },
+      "window": { "fullscreen": true, "launchAgeMsMax": 8000, "excludeIfImeVisible": true },
+      "match": {
+        "any": [
+          { "textContains": "跳过", "clickable": true, "region": "top_right", "minAreaDp2": 16 }
+        ]
+      },
+      "guard": {
+        "cooldownMs": 800,
+        "maxActionsPerWindow": 1,
+        "forbidTextRegex": "下载|安装|详情|查看|立即|领取|打开|允许|同意|确认|继续|授权|更新|升级|购买|支付|充值|开通|关注|订阅|签到|直播|购物车|优惠券|客服|评价|分享|邀请"
+      },
+      "action": { "type": "click", "fallback": "gesture-center" },
+      "evidence": "真实捕获：中国广电开屏，'2s 跳过'，bounds [1013,124][1227,218]（capture-20261101-235105）"
+    },
+    {
+      "id": "app.12306.splash",
+      "priority": 96,
+      "enabled": true,
+      "appScope": { "mode": "includeListed", "included": ["com.MobileTicket"] },
+      "window": { "fullscreen": true, "launchAgeMsMax": 8000, "excludeIfImeVisible": true },
+      "match": {
+        "any": [
+          { "descContains": "广告", "clickable": true, "minAreaDp2": 100000 }
+        ]
+      },
+      "guard": {
+        "cooldownMs": 800,
+        "maxActionsPerWindow": 1,
+        "forbidTextRegex": "下载|安装|详情|查看|立即|领取|打开|允许|同意|确认|继续|授权|更新|升级|购买|支付|充值|开通|关注|订阅|签到|直播|购物车|优惠券|客服|评价|分享|邀请"
+      },
+      "action": { "type": "tap", "fallback": "none", "tapXRatio": 0.854, "tapYRatio": 0.073, "anchor": "node" },
+      "evidence": "真实捕获：12306 开屏广告整屏为 img_adContent 图片，跳过按钮不在无障碍树；按截图估算点 (1093,202)/1280x2772，使用比例 0.854/0.073"
+    },
+    {
+      "id": "app.xunlei.splash",
+      "priority": 96,
+      "enabled": true,
+      "appScope": { "mode": "includeListed", "included": ["com.xunlei.downloadprovider"] },
+      "window": { "fullscreen": true, "launchAgeMsMax": 8000, "excludeIfImeVisible": true },
+      "match": {
+        "any": [
+          { "textContains": "会员去广告", "region": "top_center" }
+        ]
+      },
+      "guard": {
+        "cooldownMs": 800,
+        "maxActionsPerWindow": 1,
+        "forbidTextRegex": "下载|安装|详情|查看|立即|领取|打开|允许|同意|确认|继续|授权|更新|升级|购买|支付|充值|开通|关注|订阅|签到|直播|购物车|优惠券|客服|评价|分享|邀请"
+      },
+      "action": { "type": "tap", "fallback": "none", "tapXRatio": 0.868, "tapYRatio": 0.0916 },
+      "evidence": "真实捕获：迅雷开屏广告整屏为图片，跳过按钮不在无障碍树；捕获里唯一稳定标记是顶部『会员去广告』，按截图估算跳过位置 (1111,254)/1280x2772"
+    }  ]
+}
